@@ -11,6 +11,100 @@ body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
 </style>
 <body>
+  <style type="text/css">
+			
+    * {
+      margin:0px;
+      padding:0px;
+    }
+    
+    #header {
+      margin:auto;
+      width:500px;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    ul, ol {
+      list-style:none;
+    }
+    
+    .nav {
+      width:500px; /*Le establecemos un ancho*/
+      margin:0 auto; /*Centramos automaticamente*/
+    }
+
+    .nav > li {
+      float:left;
+    }
+    
+    .nav li a {
+      background-color:#000;
+      color:#fff;
+      text-decoration:none;
+      padding:10px 12px;
+      display:block;
+    }
+    
+    .nav li a:hover {
+      background-color:#434343;
+    }
+    
+    .nav li ul {
+      display:none;
+      position:absolute;
+      min-width:140px;
+    }
+    
+    .nav li:hover > ul {
+      display:block;
+    }
+    
+    .nav li ul li {
+      position:relative;
+    }
+    
+    .nav li ul li ul {
+      right:-140px;
+      top:0px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="header">
+    <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+      <ul class="nav">
+        <li><a href="">Inicio</a></li>
+        <li><a href="">Servicios</a>
+          <ul>
+            <li><a href="">FIANZAS Y CUMPLIMIENTO</a></li>
+            <li><a href="">PERSONALES EMPRESARIALES</a></li>
+            <li><a href="">EFICIENCIA ENÉRGETICA</a></li>
+            <li><a href="">POLIZAS DE ARRIENDO</a>
+            <li><a href="">POLIZAS MINERAS</a> 
+              <ul>
+                <li><a href="">Submenu1</a></li>
+                <li><a href="">Submenu2</a></li>
+                <li><a href="">Submenu3</a></li>
+                <li><a href="">Submenu4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">Acerca de</a>
+          <ul>
+            <li><a href="">Submenu1</a></li>
+            <li><a href="">Submenu2</a></li>
+            <li><a href="">Submenu3</a></li>
+            <li><a href="">Submenu4</a></li>
+          </ul>
+        </li>
+        <li><a href="">Contacto</a></li>
+      </ul>
+    </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+  </div>
+</body>
+</html>
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -20,15 +114,14 @@ body {font-family: "Lato", sans-serif}
     <a href="#nosotros" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NOSOTROS</a>
     <div class="w3-dropdown-hover w3-hide-small">
       <button class="w3-padding-large w3-button" title="Servicios">PROVEEMOS SEGUROS DE APLICACION PARA:
-        <i class="fa fa-caret-down">
-        </i>
+        <i class="fa fa-caret-down"></i>
       </button>     
       <div class=w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right>
-        <a href="#" class="w3-bar-item w3-button">FIANZAS Y CUMPLIMIENTO</a>
-        <a href="#" class="w3-bar-item w3-button">PERSONALES EMPRESARIALES</a>
-        <a href="#" class="w3-bar-item w3-button">EFICIENCIA ENÉRGETICA</a>
-        <a href="#" class="w3-bar-item w3-button">POLIZAS DE ARRIENDO</a>
-        <a href="#" class="w3-bar-item w3-button">POLIZAS MINERAS</a>
+        <a href="#" class="w3-bar-item w3-button"></a>
+        <a href="#" class="w3-bar-item w3-button"></a>
+        <a href="#" class="w3-bar-item w3-button"></a>
+        <a href="#" class="w3-bar-item w3-button"></a>
+        <a href="#" class="w3-bar-item w3-button"></a>
        </div>
     </div>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
