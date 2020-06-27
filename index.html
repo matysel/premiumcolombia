@@ -1,122 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
-<title>PREMIUM COLOMBIA</title>
-<meta charset="UTF-8">
-<link ref="estilos.css"  type="text/css" href="estilos.css" rel="styleshet">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<body>
-  <style type="text/css">
-			
-    * {
-      margin:0px;
-      padding:0px;
-    }
-    #contenedor {
-      margin:auto;
-      width:1200px;
-      height: 1000px;
-    }
-
-    #header {
-      margin:auto;
-      width:1200px;
-      font-family:Arial, Helvetica, sans-serif;
-    }
-    
-    ul, ol {
-      list-style:none;
-    }
-    
-    .nav {
-      width:1200px; /*Le establecemos un ancho*/
-      height: 10%;
-      margin:0 auto; /*Centramos automaticamente*/
-    }
-
-    .nav > li {
-      float:left;
-    }
-    
-    .nav li a {
-      background-color:#000;
-      color:#fff;
-      text-decoration:none;
-      padding:30px 12px;
-      display:block;
-    }
-    
-    .nav li a:hover {
-      background-color:#434343;
-    }
-    
-    .nav li ul {
-      display:none;
-      position:absolute;
-      min-width:140px;
-    }
-    
-    .nav li:hover > ul {
-      display:block;
-    }
-    
-    .nav li ul li {
-      position:relative;
-    }
-    
-    .nav li ul li ul {
-      right:-140px;
-      top:20px;
-    }
-    
-  </style>
-</head>
-<body>
-  <div id="header">
-    <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
-      <ul class="nav">
-        <div class="logo">
-          <a href="http://premiumcolombia.com" style="min-height: 82px; line-height: 82px;">	
-            <img src="imagenes/LogoPC.png"; style="width:130px; height: 85px;" alt="Premium Colombia">
-          </a>
-        </div>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Zona Privada</a></li>
-        <li><a href="">Servicios</a>
-          <ul>
-            <li><a href="">FIANZAS Y CUMPLIMIENTO</a></li>
-            <li><a href="">PERSONALES EMPRESARIALES</a></li>
-            <li><a href="">EFICIENCIA ENÉRGETICA</a></li>
-            <li><a href="">POLIZAS DE ARRIENDO</a></li>
-            <li><a href="">POLIZAS MINERAS</a></li>
-              <ul>
-                <li><a href="">Submenu1</a></li>
-                <li><a href="">Submenu2</a></li>
-              </ul>
-                <li><a href="">Submenu3</a></li>
-                <li><a href="">Submenu4</a></li>
-                <li><a href="">Submenu5</a></li>
-            
-          </ul>
-        </li>
-        <li><a href="">Compañias</a>
-          <ul>
-            <li><a href="">Submenu1</a></li>
-            <li><a href="">Submenu2</a></li>
-            <li><a href="">Submenu3</a></li>
-            <li><a href="">Submenu4</a></li>
-          </ul>
-        </li>
-        <li><a href="">Contacto</a></li>
-        </ul>  
-
-    </ul>
+<!DOCTYPE html><html lang="en">
+  <title>PREMIUM COLOMBIA</title>
+  <meta charset="UTF-8">
+  <link ref="estilos.css"  type="text/css" href="estilos.css" rel="styleshet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <body>
+    <style type="text/css">
         
+      * {
+        margin:0px;
+        padding:0px;
+      }
+      #contenedor {
+        margin:auto;
+        width:1200px;
+        height: 1000px;
+      }
+  
+      #header {
+        margin:auto;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+      
+      ul, ol {
+        list-style:none;
+      }
+      
+      .nav {
+        width:1200px; /*Le establecemos un ancho*/
+        height: 5%;
+        margin: 0 auto; /*Centramos automaticamente*/
+      }
+      .nav2 {
+        height: 5%;
+        margin: 0 auto; /*Centramos automaticamente*/
+      }
+      .nav > li {
+        float:left;
+      }
+      .nav2 > li {
+        float:right;
+      }
+      .nav li a {
+        background-color:#000;
+        color:#fff;
+        text-decoration:none;
+        padding:5px 8px;
+        display:block;
+      }
+      
+      .nav li a:hover {
+        background-color:#434343;
+      }
+      
+      .nav li ul {
+        display:none;
+        position:relative;
+        min-width:5px;
+      }
+      
+      .nav li:hover > ul {
+        display:block;
+      }
+      
+      .nav li ul li {
+        position:relative;
+      }
+      
+      .nav li ul li ul {
+        left:-15px;
+        top:0px;
+      }
+   </style>
+  </head>
+   <body>
+      <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+        <ul class="nav">
+          <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+          <ul class="nav">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Compañias</a></li>
+          <li><a href="">Servicios</a>
+            <ul>
+              <li><a href="">Fianzas Y Cumplimiento</a></li>
+              <li><a href="">Personales Empresariales</a></li>
+              <li><a href="">Eficiencia Enérgetica</a></li>
+              <li><a href="">Polizas Arriendo</a></li>
+              <li><a href="">Polizas Mineras</a></li>
+              <ul>
+              </ul>
+                             
+            </ul>
+          </li>
+          <li><a href="">Contacto</a>
+            
+          </li>
+          <li><a href="">Zona Privada</a></li>
+          </ul>  
+  
+      </ul>
+          
+      </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+    </div>
+  
+      <div id="header">
+            <div class="logo">
+              <a href="http://premiumcolombia.com" >	
+                <img src="imagenes/LogoPC.png"; style="width:130px; height: 85px;" alt="Premium Colombia">
+              </a>
+            </div>
+      </div>
+    </div>
+    <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+        <ul class="nav2">
+          <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+          <ul class="nav">
+          <li><a href="">Otros</a></li>
+          <li><a href="">Compañias</a></li>
+      </ul>
+          
     </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
-  </div>
-</body>
-</html>
+   </body>
+  </html>
 
 <!-- Automatic Slideshow Images -->
 <div class="mySlides w3-display-container w3-center" style="display: block;">
