@@ -12,21 +12,33 @@
       margin:0px;
       padding:0px;
     }
-    
+    #contenedor{
+        margin:auto;
+        width:1200px;
+        height: 1000px;
+    }    
     #header {
       margin:auto;
-      width:500px;
+      width:1200px;
+      border-radius: 1em;
+      margin: 1em;
       font-family:Arial, Helvetica, sans-serif;
     }
+
     
     ul, ol {
       list-style:none;
     }
     
-    .nav {
-      width:500px; /*Le establecemos un ancho*/
+    #navi {
+      width:1200px; /*Le est2ablecemos un ancho*/
       margin:0 auto; /*Centramos automaticamente*/
     }
+  </style>
+    .nav {
+        width:1200px; /*Le est2ablecemos un ancho*/
+        margin:0 auto; /*Centramos automaticamente*/
+      }
 
     .nav > li {
       float:left;
@@ -47,7 +59,7 @@
     .nav li ul {
       display:none;
       position:absolute;
-      min-width:140px;
+      min-width:5px;
     }
     
     .nav li:hover > ul {
@@ -59,18 +71,17 @@
     }
     
     .nav li ul li ul {
-      right:-140px;
-      top:20px;
+      right:-5px;
+      top:5px;
     }
     
   </style>
 
 
 <!-- Automatic Slideshow Images -->
-  <html>
-    <head>
+   
     <style>
-    .contenedor {
+    .contenedor1 {
       position: relative;
     }
     
@@ -87,13 +98,9 @@
       opacity: 1;
     }
     </style>
-    </head>
-
-    <div class="mySlides w3-display-container w3-center" style="display: block;">
-    <html>
-      <head>
-      <style>
-      .contenedor {
+   
+    <style>
+      .contenedor2 {
         position: relative;
       }
       
@@ -110,14 +117,9 @@
         opacity: 1;
       }
       </style>
-      </head>
-      <body>
-
-
-      <html>
-      <head>
+   
       <style>
-      .contenedor {
+      .contenedor3 {
         position: relative;
       }
       
@@ -134,14 +136,9 @@
         opacity: 1;
       }
       </style>
-      </head>
-      <body>
-  <div class="mySlides w3-display-container w3-center" style="display: block;">
-    
-    <html>
-      <head>
+   
       <style>
-      .contenedor {
+      .contenedor4 {
         position: relative;
       }
       
@@ -158,5 +155,4 @@
         opacity: 1;
       }
       </style>
-      </head>
-</html>
+   
