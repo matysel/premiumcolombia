@@ -30,32 +30,35 @@
         height: 15%;
         font-family:Arial, Helvetica, sans-serif;
       }
-      
+      .nav {
+
+      color: #FFFFFF;
+      overflow: hidden;
+      list-style-type: none;
+      background-color: #000000;
+      }
+      .nav li {
+      float: left;
+      }
+      .nav li a {
+      color: #FFFFFF;
+      display: block;
+      padding: 20px 20px;
+      text-align: center;
+      text-decoration: none;
+      }
+      .nav li a:hover {
+      background-color:rgb(58, 58, 58);
+      }
+      @media screen and (max-width: 600px){
+      .nav li {float: none;}
+      }
+
+     
       ul, ol {
         list-style:none;
       }
-      
-      .nav {
-        width:1200px; /*Le establecemos un ancho*/
-        height: 4%;
-        margin: 0 auto; /*Centramos automaticamente*/
-      }
-      
-      .nav > li {
-        float:left;
-      }
-      
-      .nav li a {
-        background-color:#000;
-        color:#fff;
-        text-decoration:none;
-        padding:2px 4px;
-        display:block;
-      }
-      
-      .nav li a:hover {
-        background-color:#434343;
-      }
+
       
       .nav li ul {
         display:none;
@@ -73,9 +76,10 @@
       
       .nav li ul li ul {
         left:-10px;
-        top:0px;
+        top:2px;
       }
    </style>
+  </body>
   </head>
   <body>
   <div class ="contenedor">
@@ -86,10 +90,13 @@
       </a>
     </div>
   </div>
-      <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
-        <ul class="nav">
-          <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
-          <ul class="nav">
+  <body>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+       <ul class="nav">
           <li><a href="">Inicio</a></li>
           <li><a href="">Servicios</a>
             <ul>
@@ -109,7 +116,8 @@
           
     </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
    </body>
-  </html>
+  </div> 
+   </html>
 
 <!-- Automatic Slideshow Images -->
 <div class="mySlides w3-display-container w3-center" style="display: block;">
@@ -248,7 +256,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   </head>
   <body>
-  
+   <section class="page-section  " style="margin-top: 1px;margin-bottom: 1px;border-top: 1px #e0e0e0 solid;border-bottom: 1px #e0e0e0 solid;">
   <div class="container">
     <h1 style="color: !important; font-size: 35px !important; text-align: center; font-style:normal;"> NUESTROS SERVICIOS</h1>
       <div class="w3-wide">
@@ -256,23 +264,23 @@
       <div class="col-sm-3" style="background-color:white;">
       <img src="imagenes/moneda.gif" width="100" height="100" alt="Tamaño original" class="mx-auto d-block" style="width:50%">
       <h3> <br>Seguros de fianzas & Cumplimiento</h3>
-      <p>Ampara a los asegurados o beneficiarios contra riesgo de pérdidas ocurridas por el eventual incumplimiento de obligaciones a cargo del afianzado, emanadas de leyes o contratos.</p>
-      <a style="background-color: #0e2fd3" class="read-more" style="width:70%" href="#">Conozca más </a></div>
+      <p>Ampara a los asegurados o beneficiarios contra riesgo de pérdidas ocurridas por el eventual incumplimiento de obligaciones a cargo del afianzado, emanadas de leyes o contratos.<br> <br><br> </p>
+      <a style="background-color:  goldenrod" class="read-more" style="width:70%" href="#">Conozca más </a></div>
       <div class="col-sm-3" style="background-color:white;">
       <img src="imagenes/seguridad.gif" width="100" height="100" alt="Tamaño original" class="mx-auto d-block" style="width:50%"> 
       <h3><br> <br> Seguros Generales</h3>
-      <p>Seguros todo riesgo SOAT<br> Transporte de mercancías <br> Valores Riesgos laborales</p>
-      <a style="background-color: #0e2fd3" class="read-more" style="width:70%" href="#">Conozca más </a></div>
+      <p>Seguros todo riesgo SOAT<br> Transporte de mercancías <br> Valores Riesgos laborales<br><br><br><br><br><br><br></p>
+      <a style="background-color: goldenrod" class="read-more" style="width:70%" href="#">Conozca más </a></div>
       <div class="col-sm-3" style="background-color:white;">
       <img src="imagenes/construccion.gif" width="100" height="100" alt="Tamaño original" class="mx-auto d-block" style="width:50%">    
       <h3> <br>Disposiciones Legales</h3>
       <p>Son garantías que tienen por objeto cubrir el pago de obligaciones monetarias o garantizar una disposición (leyes, decretos, ordenanzas, acuerdos, resoluciones, etc). La mayoría de ellas están contenidas en el Estatuto aduanero o en el Estatuto tributario.</p>
-      <a style="background-color: #0e2fd3" class="read-more" style="width:70%" href="#">Conozca más </a></div>
+      <a style="background-color:  goldenrod" class="read-more" style="width:70%" href="#">Conozca más </a></div>
       <div class="col-sm-3" style="background-color:white;">
       <img src="imagenes/legal.gif" width="100" height="100" alt="Tamaño original" class="mx-auto d-block" style="width:50%">       
       <h3>Cauciones Judicales</h3>
-      <p>Se usan para prestar caución ante las entidades que administran justicia en el curso de un proceso jucicial, para garantizar lo dispuesto en una norma jurídica que contiene la caución.</p>
-      <a style="background-color: #0e2fd3" class="read-more" style="width:70%" href="#">Conozca más </a></div>
+      <p>Se usan para prestar caución ante las entidades que administran justicia en el curso de un proceso jucicial, para garantizar lo dispuesto en una norma jurídica que contiene la caución.<br><br><br><br><br></p>
+      <a style="background-color:  goldenrod" class="read-more" style="width:70%" href="#">Conozca más </a></div>
     </div>
   </div>
   
@@ -292,7 +300,7 @@
   
   
   <!-- Page Section -->
-    <section class="page-section  " style="margin-top: 80px;margin-bottom: 30px;border-top: 20px #e0e0e0 solid;border-bottom: 20px #e0e0e0 solid;">
+    <section class="page-section  " style="margin-top: 1px;margin-bottom: 1px;border-top: 1px #e0e0e0 solid;border-bottom: 1px #e0e0e0 solid;">
       <!-- Container Start here -->
       <div class="container">
         <!-- Row Start -->
