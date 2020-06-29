@@ -155,4 +155,69 @@
         opacity: 1;
       }
       </style>
-   
+ 
+      <head>
+      <style>
+      .contenedor {
+        position: relative;
+      }
+      .topright {
+        position: absolute;
+        bottom: 120px;
+        right: 40px;
+        font-size: 35px;
+      }
+      
+      .topleft {
+        position: absolute;
+        bottom: 120px;
+        top: 40px;
+        left: 50px;
+        font-size: 35px;
+      }
+      .bottomright {
+        position: absolute;
+        bottom: 120px;
+        right: 50px;
+        font-size: 35px;
+      }
+      
+      img { 
+        width: 100%;
+        height: auto;
+        opacity: 1;
+      }
+      </style>
+      </head>
+      <style>
+      .contenedorr {
+        position: relative;
+      }
+      .topright {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        font-size: 35px;
+      }
+      
+      .topleft {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        font-size: 35px;
+      }
+      .bottomright {
+        position: absolute;
+        bottom: 120px;
+        right: 40px;
+        font-size: 35px;
+      }
+      
+      img { 
+        width: 100%;
+        height: auto;
+        opacity: 1;
+      }
+      </style>
+      </head>
+ 
