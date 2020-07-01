@@ -35,6 +35,24 @@ body {font-family: "Lato", sans-serif}
   </div>
     <a href="#contacto" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACTO</a>
 
+
+    <div class="search-sec cs-searchv2">
+      <a class="cs_searchbtn" style="min-height: 82px; line-height: 82px;">
+        <i class="icon-search2">
+        </i>
+      </a>
+      <form id="searchform" method="get" action="http://premiumcolombia.com" role="search" style="display: block;">
+        <input type="text" name="s" id="searchinput" value="Enter your search" onblur="if (this.value == '') {
+                              this.value = 'Enter your search';
+                          }" onfocus="if (this.value == 'Enter your search') {
+                                      this.value = '';
+                                  }">
+          <label>
+              <input type="submit" value="" name="submit">
+          </label>
+      </form>
+  </div>
+
 <!-- Main Header -->    
 <div class="main-navbar" style="z-index: auto; position: static; top: auto;">
   <div class="container">
