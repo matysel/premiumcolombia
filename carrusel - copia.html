@@ -68,90 +68,51 @@ $(document).ready(function() {
     }); 
  });
 </script>
+<body>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <div class="mySlides w3-display-container w3-center" style="display: block;"></div>
 
-<div id="carrusel">
-    <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
-    <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
-    <div class="carrusel">
-        <div class="product" id="product_0">
-            <img src="gallery/01.jpg" width="195" height="100" />
-            <h5>RESPONSABILIDAD CIVIL CONTRACTUAL</h5>
-            <p>165.00 €</p>
-        </div>
-        <div class="product" id="product_1">
-            <img src="gallery/02.jpg" width="195" height="100" />
-            <h5>Lorem ipsum 2</h5>
-            <p>100.00 €</p>
-        </div>
-        <div class="product" id="product_2">
-            <img src="gallery/03.jpg" width="195" height="100" />
-            <h5>Lorem ipsum 3</h5>
-            <p>250.00 €</p>
-        </div>
-        <div class="product" id="product_3">
-            <img src="gallery/01.jpg" width="195" height="100" />
-            <h5>Lorem ipsum 4</h5>
-            <p>75.00 €</p>
-        </div>
-        <div class="product" id="product_4">
-            <img src="gallery/02.jpg" width="195" height="100" />
-            <h5>Lorem ipsum 5</h5>
-            <p>65.00 €</p>
-        </div>
-        <div class="product" id="product_5">
-            <img src="gallery/03.jpg" width="195" height="100" />
-            <h5>Lorem ipsum 6</h5>
-            <p>40.00 €</p>
-        </div>
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+  
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="height: 80vh">
+        <img src="imagenes/architecture0.jpg" alt="Los Angeles">
+            <div class="carousel-caption">
+                <h3>RESPONSABILIDAD CIVIL CONTRACTUAL</h3>
+                <p>We had such a great time in LA!</p>
+            </div>
+      </div>
+      <div class="carousel-item" style="height: 80vh">
+        <img src="imagenes/legalP.jpg" alt="Chicago">
+            <div class="carousel-caption">
+                <h3>ESPECIALISTAS</h3>
+                <p>en pólizas de cumplimiento</p>
+            </div>
+      </div>
+      <div class="carousel-item"style="height: 80vh">
+        <img src="imagenes/real.jpg" alt="New York">
+            <div class="carousel-caption">
+                <h3>SEGURIDAD</h3>
+                <p>Al alcance de tus manos</p>
+            </div>
+      </div>
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script>
-var current = 0;
-var imagenes = new Array();
- 
-$(document).ready(function() {
-    var numImages = 6;
-    if (numImages <= 3) {
-        $('.right-arrow').css('display', 'none');
-        $('.left-arrow').css('display', 'none');
-    }
- 
-    $('.left-arrow').on('click',function() {
-        if (current > 0) {
-            current = current - 1;
-        } else {
-            current = numImages - 3;
-        }
- 
-        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
- 
-        return false;
-    });
- 
-    $('.left-arrow').on('hover', function() {
-        $(this).css('opacity','0.5');
-    }, function() {
-        $(this).css('opacity','1');
-    });
- 
-    $('.right-arrow').on('hover', function() {
-        $(this).css('opacity','0.5');
-    }, function() {
-        $(this).css('opacity','1');
-    });
- 
-    $('.right-arrow').on('click', function() {
-        if (numImages > current + 3) {
-            current = current+1;
-        } else {
-            current = 0;
-        }
- 
-        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
- 
-        return false;
-    }); 
- });
+  
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  
+  </div>
+</body>
 </script>
 </head>
