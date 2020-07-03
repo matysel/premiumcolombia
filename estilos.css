@@ -68,7 +68,7 @@
     }
     
     .nav li a {
-      background-color:#000;
+      background-color:blue;
       color:#fff;
       text-decoration:none;
       padding:30px 12px;
@@ -76,7 +76,7 @@
     }
     
     .nav li a:hover {
-      background-color:#434343;
+      background-color:blue(40, 40, 40);
     }
     
     .nav li ul {
@@ -103,82 +103,7 @@
 
 <!-- Automatic Slideshow Images -->
    
-    <style>
-    .contenedor1 {
-      position: relative;
-    }
     
-    .topright {
-      position: absolute;
-      top: 40px;
-      right: 16px;
-      font-size: 35px;
-    }
-    
-    img { 
-      width: 100%;
-      height: auto;
-      opacity: 1;
-    }
-    </style>
-   
-    <style>
-      .contenedor2 {
-        position: relative;
-      }
-      
-      .bottomright {
-        position: absolute;
-        bottom: 120px;
-        right: 16px;
-        font-size: 35px;
-      }
-      
-      img { 
-        width: 100%;
-        height: auto;
-        opacity: 1;
-      }
-      </style>
-   
-      <style>
-      .contenedor3 {
-        position: relative;
-      }
-      
-      .topleft {
-        position: absolute;
-        top: 40px;
-        left: 16px;
-        font-size: 35px;
-      }
-      
-      img { 
-        width: 100%;
-        height: auto;
-        opacity: 1;
-      }
-      </style>
-   
-      <style>
-      .contenedor4 {
-        position: relative;
-      }
-      
-      .topleft {
-        position: absolute;
-        bottom: 40px;
-        left: 16px;
-        font-size: 35px;
-      }
-      
-      img { 
-        width: 100%;
-        height: auto;
-        opacity: 1;
-      }
-      </style>
- 
       <head>
       <style>
       .contenedor {
