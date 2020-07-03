@@ -132,42 +132,12 @@
       
       img { 
         width: 100%;
-        height: auto;
+        height: 40%;
         opacity: 1;
       }
       </style>
       </head>
-      <style>
-      .contenedor {
-        position: relative;
-      }
-      .topright {
-        position: absolute;
-        top: 40px;
-        right: 40px;
-        font-size: 35px;
-      }
-      
-      .topleft {
-        position: absolute;
-        top: 40px;
-        left: 40px;
-        font-size: 35px;
-      }
-      .bottomright {
-        position: absolute;
-        bottom: 120px;
-        right: 40px;
-        font-size: 35px;
-      }
-      
-      img { 
-        width: 100%;
-        height: auto;
-        opacity: 1;
-      }
-      <style>
-   
+    
       <script>
       // Automatic Slideshow - change image every 5 seconds
       var myIndex = 0;
