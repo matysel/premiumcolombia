@@ -10,25 +10,25 @@
   padding: 0.5em;
 } 
 #header{
-  height: 20%;
+  height: 14%;
   background: #A4A4A4;
   border-radius: 1em;
   margin: 1em;
 } 
 #nav{
-  height: 10%;
-  background: #424242;
+  height: 8%;
+  background: rgb(3, 3, 56);
   border-radius: 1em;
   margin: 1em;
 } 
 #contenido{
-  height: 55%;  
+  height: 65%;  
   background: #FFFFFF;
   margin: 1em;
 } 
 #footer{
   height: 10%;  
-  background: #424242;
+  background: #A4A4A4;
   border-radius: 1em;
   margin: 1em;
 } 
