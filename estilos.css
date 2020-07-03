@@ -34,22 +34,30 @@
     #contenido {
       margin:auto;
       width:1200px;
-      height: 30%;
+      height: 28%;
       border-radius: 0.5em;
       margin: 0.5em;
       }
-    #contenido {
+    #nosotros {
       margin:auto;
       width:1200px;
-      height: 30%;
+      height: 28%;
       border-radius: 0.5em;
       margin: 0.5em;
       }
     
+    #contactos {
+      margin:auto;
+      width:1200px;
+      height: 11%;
+      border-radius: 0.5em;
+      margin: 0.5em;
+      }
+
     #footer {
       margin:auto;
       width:1200px;
-      height: 14%;
+      height: 11%;
       border-radius: 0.5em;
       margin: 0.5em;
       font-family:Arial, Helvetica, sans-serif;
