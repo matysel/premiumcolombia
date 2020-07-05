@@ -38,7 +38,7 @@
   margin: 1em;
 } 
 #section{
-  height: 90%;
+  height: 95%;
   width: 67%;
   background: #A4A4A4;
   border-radius: 1em;
@@ -46,7 +46,7 @@
   margin: 0.5em;
 } 
 #aside{
-  height: 90%;
+  height: 95%;
   width: 30%;
   background: #A4A4A4;
   border-radius: 1em;
@@ -59,7 +59,7 @@
     }
     
     #navi {
-      width:110px; /*Le est2ablecemos un ancho*/
+      width:1100px; /*Le est2ablecemos un ancho*/
       margin:0 auto; /*Centramos automaticamente*/
     }
   </style>
