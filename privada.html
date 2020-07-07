@@ -9,14 +9,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link href="estilos.css"  type="text/css" href="estilos.css" rel="styleshet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link href="estilos.css"  type="text/css" href="estilos.css" rel="styleshet">
     <link rel="icon" href="imagenes/logoPC.png" type="image/png"/>
+    <link rel="icon" href="imagenes/favicon.png" type="image/png"/>
   </head>
   <body>
 
@@ -37,26 +40,32 @@
         height: 25%;
         font-family: font-family:Arial, Helvetica, sans-serif;
       }
+      .center {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 50%;
+      }
       .nav {
 
       color: #FFFFFF;
       overflow: hidden;
       list-style-type: none;
-      background-color: #000000;
+      background-color: #000080;
       }
       .nav li {
       float: left;
       }
       .nav li a {
-      color: #FFFFFF;
+      color: #000FF;
       display: block;
       padding: 20px 20px;
       text-align: center;
       text-decoration: none;
       }
       .nav li a:hover {
-      background-color:rgb(85, 85, 85);
-      }
+      background-color:DodgerBlue;
+            }
       @media screen and (max-width: 600px){
       .nav li {float: none;}
       }
@@ -65,7 +74,11 @@
       ul, ol {
         list-style:none;
       }
-
+      .navbar-nav.navbar-center {
+      position: absolute;
+      left: 50%;
+      transform: translatex(-50%);
+      }
       
       .nav li ul {
         display:none;
@@ -88,16 +101,7 @@
    </style>
   </body>
   </head>
-  <body>
-  <div class ="header">
- 
-    <div class="logo">
-      <a href="http://premiumcolombia.com" >	
-        <img src="imagenes/LogoPC.png"; style="width:130px; height: 85px;" alt="Premium Colombia">
-      </a>
-    </div>
-  </div>
-  <body>
+  
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -107,31 +111,126 @@
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a>
            <ul>
-              <li><a href="Fianzas.html">Fianzas Y Cumplimiento</a></li>
-              <li><a href="Personales empresariales.html">Personales Empresariales</a></li>
-              <li><a href="Eficiencia energética.html">Eficiencia Enérgetica</a></li>
-              <li><a href="Polizas arriendo.html">Polizas Arriendo</a></li>
-              <li><a href="Polizas mineras.html">Polizas Mineras</a></li>
-            </ul><li><a href="companias.html">Compañias</a></li>
-            
-          <li><a href="contactos.html">Contacto</a></li>        
-          <li><a href="otros.html">Otros</a></li>
-          <li><a href="zona privada.html">Zona Privada</a></li>
-          
+              <li><a href="Fianzas.html">FIANZAS Y CUMPLIMIENTO</a></li>
+              <li><a href="construccion.html">SECTOR CONSTRUCCIÓN</a></li>
+              <li><a href="disposiciones.html">DISPOSICIONES LEGALES</a></li>
+              <li><a href="cauciones.html">CAUCIONES JUDICIALES</a></li>
+           </ul>
+              <li><a href="companias.html">Compañias</a></li>
+              <li><a href="contactos.html">Contacto</a></li>        
+              <li><a href="nosotros.html">Nosotros</a></li>
+              <li><a href="privada.html">Zona Privada</a></li>
        </ul> 
 
-    
+       <body>
+        <div class ="header">
+          <div class ="logo">
+          <h1 style="color: !important; font-size: 35px !important; text-align: center; font-style:normal;">  
+            PREMIUM </h1>
+       
+            <a href="http://premiumcolombia.com" >	
+              <img src="imagenes/LogoPC.png"; style="width:130px; height: 85px;" alt="Premium Colombia" class="center">
+            </a>
+            </div>
+
+            <h1 style="color: !important; font-size: 35px !important; text-align: center; font-style:normal;">  
+              COLOMBIA LTDA.</h1>
+           </div>
+        </div>
+        <body>  
           
     </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
    </body>
   </div> 
   </html>
 
+  <html>
 
+<!-- Nosotros Section -->
+  <head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+   <section class="page-section  " style="margin-top: 1px rgb(3, 3, 56) ;margin-bottom: 1px rgb(3, 3, 56); border-top: 1px :white solid;border-bottom: 1px rgb(3, 3, 56) solid;">
+  
+    <div class="container">
+    <section class="page-section  " style="margin-top: 1px rgb(3, 3, 56) ;margin-bottom: 1px rgb(3, 3, 56); border-top: 1px :white solid;border-bottom: 1px rgb(3, 3, 56) solid;">
+      <h3 style="color: !important; font-size: 25px !important; text-align: center; font-style:normal;">¿QUIENES SOMOS?</h3>
+     <h3><br>Somos una compañía especializada en asesoría de seguros, con más de 10 años de experiencia en el mercado.
+     Contamos con un personal idóneo que otorga a cada cliente soluciones competitivas, diferenciadoras y profesionales mediante una asesoría integral. 
+     ¡Estamos a su servicio!</h3>
+     
+    <div class="w3-wide">
+      <h3 class="w3-justify">  <div class="row">        
+      <div class="col-md-4" style="background-color:white;">
+        <img src="imagenes/mision.jpg" width="100" height="120" alt="Tamaño original" class="mx-auto d-block" style="width:60%">
+      </div>
+      <div class="col-md-8" style="background-color:white;">
+        <h2 style="background-color:DodgerBlue; font-size: 22px !important; text-align: center;  font-style:normal;">
+          MISION</h2>
+        <h3 style="color: !important; font-size: 18px !important; text-align: justify;  font-style:normal;"> 
+            Crear y brindar soluciones profesionales a traves de propuestas
+            competitivas, para la prevencion y proteccion de riesgos mediante una
+            asesoria integral y personalizada a nuestros clientes<br><br>
+          </h3>
+      </div>
+    </div>
+    
+    <div class="container">
+    <section class="page-section  " style="margin-top: 1px rgb(3, 3, 56) ;margin-bottom: 1px rgb(3, 3, 56); border-top: 1px :white solid;border-bottom: 1px rgb(3, 3, 56) solid;">
+     
+    <div class="w3-wide">
+      <h3 class="w3-justify">  <div class="row">        
+      <div class="col-md-4" style="background-color:white;">
+        <img src="imagenes/vision.jpg" width="150" height="170" alt="Tamaño original" class="mx-auto d-block" style="width:60%">
+      </div>
+      <div class="col-md-8" style="background-color:white;">
+        <h2 style="background-color:DodgerBlue; font-size: 22px !important; text-align: center;  font-style:normal;">
+          VISION</h2>
+        <h3 style="color: !important; font-size: 18px !important; text-align: justify;  font-style:normal;"> 
+          ser asesores de seguros reconocidos 
+          por su servicio personalizado, 
+          profesionalismo y comprometidos con el
+          crecimiento de nuestros clientes.<br><br><br>
+          </h3>
+      </div>
+    </div>
+    
+    <div class="container">
+    <section class="page-section  " style="margin-top: 1px rgb(3, 3, 56) ;margin-bottom: 1px rgb(3, 3, 56); border-top: 1px :white solid;border-bottom: 1px rgb(3, 3, 56) solid;">
+         
+    <div class="w3-wide">
+      <h3 class="w3-justify">  <div class="row">        
+      <div class="col-md-4" style="background-color:white;">
+        <img src="imagenes/principios.jpg" width="160" height="180" alt="Tamaño original" class="mx-auto d-block" style="width:60%">
+      </div>
+      <div class="col-md-8" style="background-color:white;">
+        <h2 style="background-color:DodgerBlue; font-size: 22px !important; text-align: center;  font-style:normal;">
+          PRINCIPIOS</h2>
+           <h3 style="color: !important; font-size: 18px !important; text-align: justify;  font-style:normal;"> 
+            <br> Personal trabajando fiel a nuestros principios.<br>
+             . Idoneidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. Prudencia<br>             
+             . Agilidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. Equidad<br>
+             . Honestidad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. Confidencialidad <br>
+             . Etica&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. Calidad<br><br>
+           </h3>
+      </div>
+    </div>
+  </div>
+ </body>
+ </html>
+ <html>
+ <html>
+ <body>
+ 
   <div class="container" style="max-width:1200px" id="band"> 
 
   <!-- Page Section -->
-  <section class="page-section  " style="margin-top: 1px;margin-bottom: 1px;border-top: 1px #e0e0e0 solid;border-bottom: 1px #e0e0e0 solid;">
+  <section class="page-section  " style="margin-top: 1px rgb(3, 3, 56); margin-bottom: 1px rgb(3, 3, 56);border-top: 1px  rgb(3, 3, 56) solid;border-bottom: 1px  rgb(3, 3, 56) solid;">
     <!-- Container Start here -->
   <div class="container">
     <!-- Row Start -->
@@ -139,9 +238,10 @@
       <div class="section-fullwidth">
         <div class="element-size-30">
           <div class="">
-            <h1 style="color: !important; font-size: 35px !important; text-align: center; font-style:normal;">LAS ASEGURADORAS MÁS IMPORTANTES DEL PAÍS</h1>
-            <div class="heading-description" style="color: !important; text-align: center; font size: 80px;"><h3> Aseguradoras que respaldan la trayectoria y experiencia de Premium Colombia:<br> <br> <br> </h3</div>
-            <div class="box_spreater">
+            </div>           
+             <h1 style="color: !important; font-size: 35px !important; text-align: center; font-style:normal;">LAS ASEGURADORAS MÁS IMPORTANTES DEL PAÍS</h1>
+            <div class="heading-description" style="color: !important; text-align: center; font size: 80px;"><h3> Aseguradoras que respaldan la trayectoria y experiencia de Premium Colombia:<br> </h3</div>
+            
                 <div class="element-size-30">
                   <div class="col-md-12  ">
                     <div class="cs-partner no-clients-border">
@@ -312,8 +412,7 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>  
+          </div>  
       </div>
     </div>    
   </div>  
@@ -321,26 +420,21 @@
 </body>
 </html>
 
+<html>
+<body>
 <!-- The Contact Section -->
 <div class="container" style="max-width:1200px"  id="contact">
   <h1 style="color: !important; font-size: 35px !important; text-align: center; font-style:normal;">CONTACTENOS</h1>
     <h4 class="w3-center" style="normal:30px">Si esta interesado en algún servicio, no dude en llamarnos, con gusto le atenderemos</h4>
-    <div class="spreater" style="text-align: center;">
-      <div class="box_spreater">
-        <div class="spreater-holder">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
+    
     
     
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i><br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +57 256 13 23<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        <i class="fa fa-map-marker" style="width:30px"></i>
+        <i class="fa fa-phone" style="width:30px"></i>Teléfono:  +57 256 13 23
+        <br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: omoreno@premiumcolombia.com premiumcdigital@gmail.com
       </div>
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
@@ -353,14 +447,17 @@
             </div>
           </div>
           <input class="w3-input w3-border" type="text" placeholder="Mensage" required name="Mensage">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">ENVIAR</button>
+          <button class="w3-button w3-DodgerBlue w3-section w3-right" type="submit">ENVIAR</button>
         </form>
       </div>
     </div>
   </div>
-  
-<!-- End Page Content -->
 </div>
+</body>
+</html>  
+
+<!-- End Page Content -->
+
 
 
 <!-- Footer -->
