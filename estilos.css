@@ -48,7 +48,7 @@
 #aside{
   height: 95%;
   width: 30%;
-  background: #A4A4A4;
+  background:DodgerBlue;
   border-radius: 1em;
   float: right;
   margin: 0.5em;
@@ -79,7 +79,7 @@
     
     .nav li a {
       background-color:blue;
-      color:#fff;
+      color:DodgerBlue;
       text-decoration:none;
       padding:30px 12px;
       display:block;
@@ -96,10 +96,12 @@
     }
     
     .nav li:hover > ul {
+      background-color:DodgerBlue;
       display:block;
     }
     
     .nav li ul li {
+      
       position:relative;
     }
     
