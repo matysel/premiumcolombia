@@ -86,7 +86,7 @@
     }
     
     .nav li a:hover {
-      background-color:blue(40, 40, 40);
+      background-color:DodgerBlue;
     }
     
     .nav li ul {
@@ -96,7 +96,6 @@
     }
     
     .nav li:hover > ul {
-      background-color:DodgerBlue;
       display:block;
     }
     
