@@ -1,2 +1,0 @@
-# premiumcolombia
-premiumcolombia web page
