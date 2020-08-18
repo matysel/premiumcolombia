@@ -4,7 +4,7 @@
     <title>PREMIUM COLOMBIA</title>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width;  user=scalable=no initial-scale=1; minimun-scale=1.0">
+    <meta name="viewport" content="width=device-width; user=scalable=no initial-scale=1; minimun-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -21,7 +21,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <link rel="icon" href="imagenes/logoPC.png" type="image/png"/>
+    <link rel="icon" href="imagenes/LogoPC.png" type="image/png"/>
     <link rel="icon" href="imagenes/favicon.png" type="image/png"/>
   </head>
   <body>
@@ -39,10 +39,22 @@
       }
   
       #header {
-        margin:auto;
-        height: 15%;
-        font-family: font-family:Arial, Helvetica, sans-serif;
+     
+      padding:10px;
+      margin: auto;
+     
+     
+       z-index: 100;
+        
       }
+      header nav {
+        width:90%;
+        padding:10px;
+				max-width:1000px;
+				margin: auto;
+        background:white;
+        position:120px;
+			}
       .center {
        display: block;
        margin-left: auto;
@@ -51,10 +63,10 @@
       }
       .nav {
 
-      color:  linear-gradient(#000080, rgb(32, 114, 196));
+      color:   rgb(32, 114, 196));
       overflow: hidden;
       list-style-type: none;
-      background-image: linear-gradient(#000080, rgb(32, 114, 196));
+      background-image:linear-gradient(#000080, rgb(32, 114, 196));
       }
       .nav li {
       float: left;
@@ -62,10 +74,9 @@
       .nav li a {
       color: linear-gradient(#000080, rgb(32, 114, 196));
       display: block;
-      padding: 10px 10px;
+      padding: 20px 20px;
       font-family:tahoma;
-      text-decoration:none;
-			font-size:25px;
+      font-size:25px;
       text-align: center;
       text-decoration: none;
       }
@@ -88,10 +99,9 @@
       
       .nav li ul {
         display:none;
-       	min-width:140px;
-        display:block;
         position:relative;
-        }
+        min-width:1px;
+      }
       
       .nav li:hover > ul {
         display:block;
@@ -102,9 +112,9 @@
       }
       
       .nav li ul li ul {
-        right:-140px;
-				top:0px;
-        }
+        left:-10px;
+        top:2px;
+      }
    </style>
   </body>
   </head>
@@ -128,9 +138,9 @@
           
   
   
-          <nav class="navbar navbar-expand-md bg-primary navbar-dark bg-primary;  fixed-top right:-140px;
-          top:0px; font-size:25px color:  linear-gradient(#000080, rgb(32, 114, 196))">
-            <img class="logo" src="imagenes/LogoPC.png" class="navbar-brand" style=width:40px></a>
+          <nav class="header nav navbar-expand-md bg-primary style=linear-gradient(#000080, rgb(32, 114, 196));  fixed-top 
+          padding:15px font-size:25px">
+            <img class="logo" src="imagenes/LogoPC.png" class="navbar-brand" style=width:70px;height:90px;></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -139,22 +149,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active"><span class="sr-only">(current)</span>
-                    <a class="nav-item"><a href="index.html"     style=color:white font-style=tahoma 
-                      >&nbsp;&nbsp;Inicio</a>
-                    <a class="nav-item"><a href="nosotros.html"  style=color:white font-style=tahoma 
-                      font-size=35>&nbsp;&nbsp;Nosotros</a>
-                    <a class="nav-item"><a href="companias.html" style=color:white font-style=tahoma
-                      font-size=35> &nbsp;&nbsp;Compañias</a>
-                    <a class="nav-item"><a href="contactos.html" style=color:white font-style=tahoma 
-                      font-size=35>&nbsp;&nbsp;Contacto</a>
-                    <a class="nav-item"><a href="privada.html"   style=color:white font-style=tahoma 
-                      font-size=35>&nbsp;&nbsp;Privada</a>
+                  <li><a class="nav-item"><a href="index.html"     style=color:white font-style=tahoma 
+                      font-size=35>&nbsp;&nbsp;Inicio</a></li>
+                      <li><a class="nav-item"><a href="nosotros.html"  style=color:white font-style=tahoma 
+                      font-size=35>&nbsp;&nbsp;Nosotros</a></li>
+                      <li><a class="nav-item"><a href="companias.html" style=color:white font-style=tahoma
+                      font-size=35> &nbsp;&nbsp;Compañias</a></li>
+                      <li><a class="nav-item"><a href="contactos.html" style=color:white font-style=tahoma 
+                      font-size=35>&nbsp;&nbsp;Contacto</a></li>
+                      <li><a class="nav-item"><a href="privada.html"   style=color:white font-style=tahoma 
+                      font-size=35>&nbsp;&nbsp;Privada</a></li>
 
 
                  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     &nbsp;Servicios&nbsp;</a>                      
+                     Servicios </a>                      
                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="fianzas.html">Fianzas</a>
                     <a class="dropdown-item" href="empresas.html">Empresas</a>
@@ -227,7 +237,7 @@
 
      
  <!-- Automatic Slideshow Images -->   
-     <div class="mySlides w3-display-container w3-center" style="display: block;">
+  <div class="mySlides w3-display-container w3-center" style="display: block;">
      <!-- Indicators -->
    
       <head>
@@ -253,34 +263,25 @@
     
       <div class="carousel-inner">
          <div class="carousel-item> style=margin-top: 1px; margin-bottom: 1px ; border-top: 1px   solid;border-bottom: 1px  solid;">
-           <a class="carousel-control-prev figure-img img-fluid" href="#demo" data-slide="imagenes/familia.jpg">
+            <a class="carousel-control-prev figure-img img-fluid" href="#demo" data-slide="imagenes/familia.png">
              <span class="carousel-control-prev-icon figure-img img-fluid"></span>
-           </a>
-           <a class="carousel-control-next figure-img img-fluid" href="#demo" data-slide="imagenes/contratos.jpg">
+            </a>
+            <a class="carousel-control-next figure-img img-fluid" href="#demo" data-slide="imagenes/contratos.png">
             <span class="carousel-control-next-icon"></span>
             </a>
-           <img src="imagenes/architecture0.jpg" width="1200" height="400" style="height: 50vh"/>
-           <div class="topright">
-            <a class=" font-style=tahoma";><p><b>RESPONSABILIDAD CIVIL<br> EXTRACONTRACTUAL</b></p></a></div>
-           </div>
+            <img src="imagenes/architecture0.png" width="1200" height="400" style="height: 90vh"/>
+           
          </div>
       </div>
+   </div>
   
-      <div class="mySlides w3-display-container w3-center" style="display: block;">
+   <div class="mySlides w3-display-container w3-center" style="display: block;">
       
       <head>
       <style>
       .contenido {
         position: auto;
       }
-      
-      .bottomright {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        font-size: 25px;
-       }
-      
       img { 
         width: 100%;
         height: auto;
@@ -291,38 +292,24 @@
   
       <div class="carousel-inner">
         <div class="carousel-item> style=margin-top: 1px; margin-bottom: 1px ; border-top: 1px   solid;border-bottom: 1px  solid;">
-          <a class="carousel-control-prev " href="#demo" data-slide="imagenes/architecture0.jpg">
+          <a class="carousel-control-prev figure-img img-fluid" href="#demo" data-slide="imagenes/architecture0.png">
             <span class="carousel-control-prev-icon"></span>
           </a>
-          <a class="carousel-control-next" href="#demo" data-slide="imagenes/familia.jpg">
-            <span class="carousel-control-next-icon"></span>
+          <a class="carousel-control-next  figure-img img-fluid" href="#demo" data-slide="imagenes/familia.png">
+            <span class="carousel-control-next"></span>
           </a>
-          <img src="imagenes/contratos.jpg" width="1200" height="400" style="height: 50vh"/>
-          <div class="bottomright">
-           <a class=" font-style=tahoma";><p><b>ESPECIALISTAS EN <br>POLIZAS DE CUMPLIMIENTO</b></p></a></div>
-      </div>
-   </div>  
+          <img src="imagenes/contratos.png" width="1200" height="400" style="height:90vh"/>
+          
+        </div>
+      </div>  
   </div>
     
-   <div class="mySlides w3-display-container w3-center" style="display: block;">
+  <div class="mySlides w3-display-container w3-center" style="display: block;">
       <head>
       <style>
       .contenido {
         position: auto;
       }
-      .topright {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 25px;
-    } 
-      .topleft {
-        position: absolute;
-        bottom: 40px;
-        left: 16px;
-        font-size: 25px;
-      }
-      
       img { 
         width: 100%;
         height: auto;
@@ -332,18 +319,17 @@
       </head>
         <div class="carousel-inner">
           <div class="carousel-item> style=margin-top: 1px; margin-bottom: 1px ; border-top: 1px   solid;border-bottom: 1px  solid;">
-            <a class="carousel-control-prev" href="#demo" data-slide="imagenes/contratos.jpg">
+            <a class="carousel-control-prev figure-img img-fluid" href="#demo" data-slide="imagenes/contratos.png">
               <span class="carousel-control-prev-icon"></span>
             </a>
-            <a class="carousel-control-next" href="#demo" data-slide="architecture0.jpg">
+            <a class="carousel-control-next figure-img img-fluid" href="#demo" data-slide="architecture0.png">
               <span class="carousel-control-next-icon"></span>
             </a>
-            <img src="imagenes/familia.jpg"  width="1200" height="400" style="height: 50vh"/>
-            <div class="topright"> 
-            <a class=" font-style=tahoma";><p><b>¡PROTECCIÓN AL ALCANCE DE SUS MANOS!</b></p></a></div>
+            <img src="imagenes/familia.png"  width="1200" height="400" style="height: 90vh"/>
+           
           </div>
         </div>
-    </div>
+  </div>
 
 
 <!-- Nosotros Section -->
