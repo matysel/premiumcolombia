@@ -37,15 +37,10 @@
         width:1200px;
         height: 1000px;
       }
-      #nav{
+      #nav {
         list-style-type: none;
       } 
      
-     .header2{
-     background: white;
-     padding:10px;
-     
-     }
       header nav {
         width:80%;
         height: 25%;
@@ -55,14 +50,8 @@
         background:white;
         position:relative;
 			}
-      .center {
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       width: 50%;
-      }
+      
       .nav {
-
       color:   rgb(32, 114, 196));
       overflow: hidden;
       list-style-type: none;
@@ -75,7 +64,7 @@
       .nav li a {
       color: linear-gradient(#000080, rgb(32, 114, 196));
       display: block;
-      padding: 20px 20px;
+      padding: 10px 10px;
       font-family:tahoma;
       font-size:25px;
       text-align: center;
@@ -92,7 +81,7 @@
       
       .nav-dropdown { 
       position: relative;  
-      display: block
+      display: block;
       padding: 2px 2px;
       font-family:tahoma;
       font-size:25px;
@@ -102,11 +91,27 @@
       ul, ol {
         list-style:block;
       }
-      
-      .navbar-toggler  {
-      
+      .dropdown-item {
+        display:none;
+        position:absolute;
+        min-width:1px;
       }
-      
+      .navbar-toggler  {
+        list-style:block;
+      }
+      .dropdownmenu {
+    display: block;
+    position: absolute;
+  
+    right: 10;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    background: url(images/menu-icon.png) center center  #e96656;
+ }
       .dropdown-item {
         display:none;
         position:relative;
@@ -156,6 +161,7 @@
   
           <nav class="navbar nav navbar-expand-md bg-primary style=linear-gradient(#000080, rgb(32, 114, 196));  fixed-top 
           padding:15px font-size:25px">
+          
             <img class="logo" src="imagenes/LogoPC.png" class="navbar-brand" style=width:100px;height:90px;></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -178,7 +184,7 @@
 
 
                  <li class="nav-dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown" role="button" 
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown"
                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
                      font-style=tahoma font-size=35>
                      Servicios </a> 
@@ -199,7 +205,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>                 
-        <h2><br><br> </h2>   
+        <h2><br><br><br><br> </h2>   
         <div class ="header">
           <div class="col-md-3 ">
             <figure>
@@ -288,7 +294,7 @@
             <a class="carousel-control-next figure-img img-fluid" href="#demo" data-slide="imagenes/contratos.png">
             <span class="carousel-control-next-icon"></span>
             </a>
-            <img src="imagenes/architecture0.png" width="1200" height="400" style="height: 90vh"/>
+            <img src="imagenes/architecture0.png" width="1200" height="400" style="height: 50vh"/>
            
          </div>
       </div>
@@ -317,7 +323,7 @@
           <a class="carousel-control-next  figure-img img-fluid" href="#demo" data-slide="imagenes/familia.png">
             <span class="carousel-control-next"></span>
           </a>
-          <img src="imagenes/contratos.png" width="1200" height="400" style="height:90vh"/>
+          <img src="imagenes/contratos.png" width="1200" height="400" style="height:50vh"/>
           
         </div>
       </div>  
@@ -344,7 +350,7 @@
             <a class="carousel-control-next figure-img img-fluid" href="#demo" data-slide="architecture0.png">
               <span class="carousel-control-next-icon"></span>
             </a>
-            <img src="imagenes/familia.png"  width="1200" height="400" style="height: 90vh"/>
+            <img src="imagenes/familia.png"  width="1200" height="400" style="height: 50vh"/>
            
           </div>
         </div>
@@ -702,7 +708,9 @@
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+2
+<script type="text/javascript" src="jquery.dropdown.js"></script>
 <script>
 // Automatic Slideshow - change image every 5 seconds
 var myIndex = 0;
