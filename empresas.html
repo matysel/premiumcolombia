@@ -37,56 +37,104 @@
         width:1200px;
         height: 1000px;
       }
-  
-      #header {
-        margin:auto;
+      #nav {
+        list-style-type: none;
+      } 
+     
+      header nav {
+        width:30%;
         height: 25%;
-        font-family: font-family:Arial, Helvetica, sans-serif;
-      }
-      .center {
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       width: 50%;
-      }
+        padding:10px;
+				max-width:1200px;
+				margin: auto;
+        background:white;
+        position:relative;
+			}
+      
       .nav {
-
-      color: rgb(32, 114, 196);
+      color:   rgb(32, 114, 196);
       overflow: hidden;
       list-style-type: none;
-      background-image: linear-gradient(#000080, rgb(32, 114, 196));
+      background-image:linear-gradient(#000080, rgb(32, 114, 196));
       }
       .nav li {
+      position: relative;  
       float: left;
       }
       .nav li a {
-      color: #0000FF;
+      color: linear-gradient(#000080, rgb(32, 114, 196));
       display: block;
-      padding: 20px 20px;
+      padding: 10px 10px;
+      font-family:tahoma;
+      font-size:25px;
       text-align: center;
       text-decoration: none;
       }
-      .nav li a:hover {
-      background-color:#0000ff;
-            }
-      @media screen and (max-width: 600px){
-      .nav li {float: none;}
-      }
-
-     
-      ul, ol {
-        list-style:none;
-      }
-      .navbar-nav.navbar-center {
-      position: absolute;
-      left: 50%;
-      transform: translatex(-50%);
+    .nav li a:hover {
+      background-color: #0000ff;
+      transition: all .3s;
+      visibility: visible;
+    } 
+      @media screen and (max-width: 768px){
+      .nav li {float: visible;}
+      
       }
       
-      .nav li ul {
+      .nav-dropdown { 
+      position: relative;  
+      display: block;
+      padding: 2px 2px;
+      font-family:tahoma;
+      font-size:25px;
+      text-align: center;
+      text-decoration: none;
+      }
+      ul, ol {
+        list-style:block;
+      }
+      .dropdown-item {
+        display:none;
+        position:absolute;
+        min-width:1px;
+      }
+      .navbar-toggler {
+        list-style-type: block;
+      }
+      .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: whitesmoke;
+        background-size: 100% 100%;
+        list-style-type: block;
+      }
+      
+      .dropdownmenu {
+      display: block;
+      position: absolute;
+      right: 10;
+      top: 5px;
+      width: 25px;
+      height: 25px;
+      margin: 0;
+      padding: 0;
+      border-radius: 3px;
+      background: whitesmoke;
+      }
+  
+      .dropdown-item {
         display:none;
         position:relative;
         min-width:1px;
+      }
+  
+      .nav li ul {
+        display:none;
+        position:static;
+        min-width:1px;
+        color:rgb(32, 114, 196)
       }
       
       .nav li:hover > ul {
@@ -102,10 +150,6 @@
         top:2px;
       }
    </style>
-  </body>
-  </head>
-<html>
-  <body>
   
   <nav><!-- Aqui estamos abriendo la nueva etiqueta nav -->
 <div class="container-fluid" style="background-color:white;padding: 45px; border: 10px solid white;">
@@ -118,12 +162,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
-        <nav class="navbar navbar-expand-md; style=background-image:linear-gradient(#000080, rgb(32, 114, 196))">
    
       <main class="container">
-        
-
-
          <nav class="navbar navbar-expand-md bg-primary navbar-dark bg-primary  fixed-top">
                 <img class="logo" src="imagenes/LogoPC.png" class="navbar-brand" style=width:40px></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -134,15 +174,15 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item active"><span class="sr-only">(current)</span>
-                        <a class="nav-item"><a href="index.html"     style=color:white font-style=tahoma 
+                        <a class="nav-item"><a href="index.html"     style=color:white font-style: tahoma 
                           font-size=35>&nbsp;&nbsp;Inicio</a>
-                        <a class="nav-item"><a href="nosotros.html"  style=color:white font-style=tahoma 
+                        <a class="nav-item"><a href="nosotros.html"  style=color:white font-style: tahoma 
                           font-size=35>&nbsp;&nbsp;Nosotros</a>
-                        <a class="nav-item"><a href="companias.html" style=color:white font-style=tahoma
+                        <a class="nav-item"><a href="companias.html" style=color:white font-style: tahoma
                           font-size=35> &nbsp;&nbsp;Compañias</a>
-                        <a class="nav-item"><a href="contactos.html" style=color:white font-style=tahoma 
+                        <a class="nav-item"><a href="contactos.html" style=color:white font-style: tahoma 
                           font-size=35>&nbsp;&nbsp;Contacto</a>
-                        <a class="nav-item"><a href="privada.html"   style=color:white font-style=tahoma 
+                        <a class="nav-item"><a href="privada.html"   style=color:white font-style: tahoma 
                           font-size=35>&nbsp;&nbsp;Privada</a>
 
 
@@ -165,9 +205,9 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>                 
- <body>
-  <div class ="header">
-    <div class="col-md-2" style="background-color:">
+ 
+      <div class ="header">
+    <div class="col-md-2">
       <figure>
         <a href="">
           <img class="" src="" alt="">
@@ -187,7 +227,7 @@
         <meta name="viewport" alt="Premium Colombia">
          <img class="logo figure-img img-fluid text=center  d-block" src="imagenes/logopce.png"; style="width:480px; height: 120px;"  alt="Premium Colombia" class="center"></a>
     </div>
-    <div class="col-md-1" style="background-color:">
+    <div class="col-md-1">
       <figure>
         <a href="">
           <img class="" src="" alt="">
@@ -214,32 +254,12 @@
           </div>
    
   </div>
- </body>
-
-    <div class="col-md-3">
-              <a href="https://m.facebook.com/premium_colombia-106026814500647">
-                <img class="logo" src="logos/logo fb.png"; style="width:35px; height: 35px;" alt="Facebook" class="mx-auto d-block" class="right">
-              </a>
-              <a href="https://www.instagram.com/premium_colombia">
-                <img class="logo" src="logos/logo ig.png"; style="width:35px; height: 35px;" alt=" Instagram" class="mx-auto d-block" class="">
-              </a>
-              <a href="https://https://www.linkedin.com/in/oscar-fredy-moreno-rodr%C3%ADguez-01503141/">
-                <img class="logo" src="logos/logo linked.png"; style="width:35px; height: 35px;" alt=" Instagram" class="mx-auto d-block" class="">
-              </a>
-              <a href="https://www.twitter.com/premium_colombia">
-                <img class="logo" src="logos/logo twitter.png"; style="width:35px; height: 35px;" alt=" Instagram" class="mx-auto d-block" class="">
-              </a>
-            
-            </style>
-          </div>
-   
-  </div>
- </body>
-   
-  </div>
- </body>
  
- <head>
+
+  </div>
+   
+  </div>
+ 
     
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -248,89 +268,88 @@
 
 <div class="w3-wide"  style="padding: 10px; border: 5px solid white; " >
          
-        <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style=tahoma;padding:20px">
+        <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style: tahoma;padding:20px">
         NUESTROS SERVICIOS</h3>
   <div class="w3-wide">
           <div class="w3-wide">
-            <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+            <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
             <br>Las pólizas de seguro son el mecanismo idóneo para garantizar y proteger el patrimonio de empresas y personas naturales,
             nosotros brindamos un amplio portafolio que le permitirá reducir riesgos e incertidumbre.<br><br><br></h3>
           </div>
     <div class="w3-wide" style="padding: 10px; border: 5px solid white; " >
-      <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style=tahoma;padding:20px">
+      <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style: tahoma;padding:20px">
         SEGUROS EMPRESARIALES</h2>
          <div class="w3-wide">
-          <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+          <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
            <b> <br></b></h3>     
            <div class="col-md-4" style="background-color:white;">
             <figure class="figure">
               <img src="imagenes/minas.jpg" width="280" height="280" alt="Tamaño original" class="figure-img img-fluid text center mx-auto d-block" style="width:100%">
-              <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+              <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
                 <b></b></h3></figure>
           </div>
-            <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style=tahoma; padding:15px"> 
+            <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style: tahoma; padding:15px"> 
             <b>SECTOR DE CONSTRUCCIÓN</b></h3>
-            <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+            <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
              Todo Riesgo Construcción y Montaje – Maquinaria y Equipo<br>
               Póliza Decenal<br>
               Errores y Omisiones - Arquitectos e Ingenieros<br>
               Responsabilidad civil profesional<br></h3>
-              <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style=tahoma padding:15px"> 
-             <b>SEGUROS DE EFICIENCIA ENERGETICA <br>Y GENERACIÓN DE ENERGIA.</b></h3> 
-             <h3 style=" font-size: 5px ; text-align: left;  font-style=tahoma; padding: 10px; border: 10px solid white; ;"> 
+              <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style: tahoma; padding:15px"> 
+                <b>SEGUROS DE EFICIENCIA ENERGETICA <br>Y GENERACIÓN DE ENERGIA.</b></h3> 
+             <h3 style=" font-size: 5px ; text-align: left;  font-style: tahoma; padding: 10px; border: 10px solid white; ;"> 
               <br></h3>
          </div>     
     </div>
     <div class="w3-wide" style="padding: 10px; border: 5px solid white; " >
-           <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style=tahoma;padding:15px">
+           <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style: tahoma;padding:15px">
            SECTOR FINANCIERO Y COMERCIAL:</h2>
          <div class="w3-wide">
-               <h3 style="color: !important; font-size: 20px !important; text-align: left;  font-style=tahoma"> 
-                <b><br> </b></h3>
+          <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;">     <b><br> </b></h3>
              <div class="col-md-4" style="background-color:white;">
               <figure class="figure">
                 <img src="imagenes/cibernetico.jpg" width="360" height="340" alt="Tamaño original" class="figure-img img-fluid text center mx-auto d-block" style="width:100%">
-                <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+                <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
                   <b></b></h3></figure>
              </div>  
-              <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style=tahoma;padding:15px"> 
+              <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style: tahoma;padding:15px"> 
               <b>  SEGUROS CONTRA RIESGOS CIBERNETICOS:</b></h3>
-              <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+              <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
               Destinado a amparar las pérdidas o daños patrimoniales o reales tanto en 
               línea como fuera de línea, derivados de un evento cibernético.<br> </h3>     
-              <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style=tahoma;padding:15px"> 
+              <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style: tahoma;padding:15px"> 
               <b>MANEJO COMERCIAL GLOBAL:</b></h3>
-              <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 10px solid white; ;"> 
+              <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 10px solid white; ;"> 
                Protege a las empresas de la apropiación indebida de dineros o bienes de su propiedad, por parte de los empleados.
               <br><br></h3>      
-              <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: center;  font-style=tahoma;padding:15px"> 
+              <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: center;  font-style: tahoma;padding:15px"> 
               <b> SEGURO DE CRÉDITO: </b></h3>
-              <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+              <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
               El cliente sin importar su actividad, transfiere a la Aseguradora el riesgo del NO PAGO de sus FACTURAS originado por la insolvencia o falta de pago prolongada de los compradores de sus 
               productos o servicios, liquidación forzosa o quiebra, concordato acuerdos de acreedores (Ley 550).</h3>
          </div>
      </div>   
      <div class="w3-wide" style="padding: 10px; border: 5px solid white; " >
-            <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style=tahoma;padding:20px">
+            <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style: tahoma;padding:20px">
             SECTOR DE TRANSPORTE Y OTROS</h2>
         <div class="w3-wide">
-             <h3 style="color: !important; font-size: 20px !important; text-align: left;  font-style=tahoma"> 
-             <b><br> </b></h3>
+          <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;">
+            <b><br> </b></h3>
             <div class="col-md-4" style="background-color:white;">
               <figure class="figure">
                 <img src="imagenes/transporte.jpg" width="310" height="310" alt="Tamaño original" class="figure-img img-fluid text center mx-auto d-block" style="width:100%">
-                <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+                <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
                   <b></b></h3></figure>   
               </div>       
-             <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style=tahoma;padding:15px"> 
+             <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: left;  font-style: tahoma;padding:15px"> 
              <b>  TRANSPORTE DE MERCANCIAS Y VALORES:</b></h3>
-             <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 10px; border: 5px solid white;"> 
+             <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 10px; border: 5px solid white;"> 
              Seguro dirigido a la industria o comercio para trasladar sus bienes en importación o exportación dentro del territorio nacional o
              perímetro urbano de las ciudades pobladas, así como el traslado de valores o dinero. </h3>   
         
-             <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: center;  font-style=tahoma;padding:15px"> 
+             <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196));color: white!important; font-size: 20px !important; text-align: center;  font-style: tahoma;padding:15px"> 
              <b> SEGURO DE AVIACIÓN:</b></h3>
-             <h3 style=" font-size: 20px ; text-align: left;  font-style=tahoma; padding: 1px; border: 5px solid white;"> 
+             <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma; padding: 1px; border: 5px solid white;"> 
              Cubre las necesidades de los propietarios y exploradores de 
              aeronaves, así como de personas naturales o jurídicas involucradas.</h3>
         </div>
@@ -340,167 +359,168 @@
     
   </div>
      
-
-
-   <body>    
-    <h2 style=" font-size: 5px !important; text-align: center; font-style=tahoma;"></h2>
-      <!-- Page Section -->
-    
-        <!-- Container Start here -->
-                  <!-- Row Start -->
-                  <div class="w3-wide"  style="padding: 10px; border: 5px solid white; " >
-          
-                    <div class="element-size-30">
-                      <div class="container-fluid">
-                                
-                        <h1 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white ; font-size: 25px !important; text-align: center; font-style=tahoma;padding:20px">LAS ASEGURADORAS MÁS IMPORTANTES DEL PAÍS</h1>
-                        <div class="heading-description" style="color: !important; text-align: center; font size: 25px;"><h3> Aseguradoras que respaldan la trayectoria y experiencia de Premium Colombia:<br> <br> <br> </h3</div>
-                        
-                            <div class="element-size-900">
-                              <div class="col-md-12  ">
-                                <div class="cs-partner no-clients-border">
-                                  <ul class="row">
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="http://www.segurexpo.com/pago-en-linea" target="blank">
-                                          <img class="" src="logos/segurexpo.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:90%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.segurossura.com.co/paginas/pago-express.aspx#/Pagos"  target="blank">
-                                          <img class="" src="logos/sura.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                    </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.segurosdelestado.com/pages/Tips"  target="blank">
-                                          <img class="" src="logos/estado.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.positiva.gov.co/web/guest/servicios-en-linea" target="blank">
-                                          <img class="" src="logos/positiva.png" alt="Tamaño original" class="mx-auto d-block" style="width:75%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://recaudos.mundialseguros.com.co/"  target="blank">
-                                          <img class="" src="logos/mundial.png" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.sbseguros.co/zonapagos/"  target="blank">
-                                          <img class="" src="logos/aig.jpeg"alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:"   target="blank">
-                                      <figure>
-                                        <a href="https://www.chubb.com/co-es/servicios-en-linea/pagos-en-linea.aspx"  target="blank">
-                                          <img class="" src="logos/chubb.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:75%">
-                                        </a>
-                                      </figure>
-                                    </li>                            <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.solipagosonline.com.co/UIPasarelaPagos/"  target="blank">
-                                          <img class="" src="logos/solidaria.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:120%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.libertycolombia.com.co/pagos"  target="blank">
-                                          <img class="" src="logos/liberty.png" alt="Tamaño original" class="mx-auto d-block" style="width:90%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://nacionaldeseguros.com.co/"  target="blank">
-                                          <img class="" src="logos/nacional.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:90%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.globalseguroscolombia.com/"  target="blank">
-                                          <img class="" src="logos/global.png" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.allianz.co/clientes/todos-los-clientes/pagos.html"  target="blank">
-                                          <img class="" src="logos/allianz.png" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href=" https://previsora.gov.co/previpagos/"  target="blank">
-                                          <img class="" src="logos/previsora.png"alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://cotiza.mapfre.com.co/pagosWeb/vista/paginas/noFilterIniPagosPublico.jsf"  target="blank">
-                                          <img class="" src="logos/mapfre.png" alt="Tamaño original" class="mx-auto d-block" style="width:80%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.bnamericas.com/es/perfil-empresa/generali-colombia-compania-de-seguros-generales-sa-generali-colombia"  target="blank">
-                                          <img class="" src="logos/generali.png" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.confianza.com.co/canales-pago"  target="blank">
-                                          <img class="" src="logos/confianza.png" alt="Tamaño original" class="mx-auto d-block" style="width:90%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href="https://www.axacolpatria.co/pagosenlinea/opcionespago"  target="blank">
-                                          <img class="" src="logos/axa.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                    <li class="col-md-2" style="background-color:">
-                                      <figure>
-                                        <a href=""  target="blank">
-                                          <img class="" src="logos/previsora.jpeg"alt="Tamaño original" class="mx-auto d-block" style="width:100%">
-                                        </a>
-                                      </figure>
-                                    </li>
-                                   </ul>
-                               </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>  
-                  </div>
-                </div>    
-        </div>  
-        
+  <h2 style=" font-size: 14px !important; text-align: center; font-style:tahoma;"></h2>
+     <!-- Page Section -->
+   
+       <!-- Container Start here -->
+                 <!-- Row Start -->
+                 <div class="row">
+         
+                   <div class="element-size-30">
+                     <div class="container-fluid">
+                               
+                       <h1 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white ; font-size: 25px !important; text-align: center;
+                        font-style:tahoma; padding:20px">
+                         LAS ASEGURADORAS MÁS IMPORTANTES DEL PAÍS</h1>
+                       <div class="heading-description" style="text-align: center; font-size: 25px;"><h3> Aseguradoras que respaldan la trayectoria y experiencia de Premium Colombia:<br> <br> <br> </h3</div>
+                       
+                           <div class="element-size-900">
+                             <div class="col-md-12  ">
+                               <div class="cs-partner no-clients-border">
+                                 <ul class="row">
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="http://www.segurexpo.com/pago-en-linea" target="blank">
+                                         <img class="" src="logos/segurexpo.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:90%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="https://www.segurossura.com.co/paginas/pago-express.aspx#/Pagos"  target="blank">
+                                         <img class="" src="logos/sura.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                   </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="https://www.segurosdelestado.com/pages/Tips"  target="blank">
+                                         <img class="" src="logos/estado.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2" >
+                                     <figure>
+                                       <a href="https://www.positiva.gov.co/web/guest/servicios-en-linea" target="blank">
+                                         <img class="" src="logos/positiva.png" alt="Tamaño original" class="mx-auto d-block" style="width:75%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2" >
+                                     <figure>
+                                       <a href="https://recaudos.mundialseguros.com.co/"  target="blank">
+                                         <img class="" src="logos/mundial.png" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="https://www.sbseguros.co/zonapagos/"  target="blank">
+                                         <img class="" src="logos/aig.jpeg"alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2"   target="blank">
+                                     <figure>
+                                       <a href="https://www.chubb.com/co-es/servicios-en-linea/pagos-en-linea.aspx"  target="blank">
+                                         <img class="" src="logos/chubb.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:75%">
+                                       </a>
+                                     </figure>
+                                   </li>               
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="https://www.solipagosonline.com.co/UIPasarelaPagos/"  target="blank">
+                                         <img class="" src="logos/solidaria.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:120%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="https://www.libertycolombia.com.co/pagos"  target="blank">
+                                         <img class="" src="logos/liberty.png" alt="Tamaño original" class="mx-auto d-block" style="width:90%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="https://nacionaldeseguros.com.co/"  target="blank">
+                                         <img class="" src="logos/nacional.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:90%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="https://www.globalseguroscolombia.com/"  target="blank">
+                                         <img class="" src="logos/global.png" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href="https://www.allianz.co/clientes/todos-los-clientes/pagos.html"  target="blank">
+                                         <img class="" src="logos/allianz.png" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href=" https://previsora.gov.co/previpagos/"  target="blank">
+                                         <img class="" src="logos/previsora.png"alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2" >
+                                     <figure>
+                                       <a href="https://cotiza.mapfre.com.co/pagosWeb/vista/paginas/noFilterIniPagosPublico.jsf"  target="blank">
+                                         <img class="" src="logos/mapfre.png" alt="Tamaño original" class="mx-auto d-block" style="width:80%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2" >
+                                     <figure>
+                                       <a href="https://www.bnamericas.com/es/perfil-empresa/generali-colombia-compania-de-seguros-generales-sa-generali-colombia"  target="blank">
+                                         <img class="" src="logos/generali.png" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2" >
+                                     <figure>
+                                       <a href="https://www.confianza.com.co/canales-pago"  target="blank">
+                                         <img class="" src="logos/confianza.png" alt="Tamaño original" class="mx-auto d-block" style="width:90%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2" >
+                                     <figure>
+                                       <a href="https://www.axacolpatria.co/pagosenlinea/opcionespago"  target="blank">
+                                         <img class="" src="logos/axa.jpg" alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                   <li class="col-md-2">
+                                     <figure>
+                                       <a href=""  target="blank">
+                                         <img class="" src="logos/previsora.jpeg"alt="Tamaño original" class="mx-auto d-block" style="width:100%">
+                                       </a>
+                                     </figure>
+                                   </li>
+                                  </ul>
+                              </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>  
+                 </div>
+               </div>    
+       </div>  
+       
 
 
 <!-- The Contact Section -->
-<div class="w3-wide"  style="padding: 10px; border: 5px solid white; "  id="contact">
-<h1 style="color: !important;background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style=tahoma;padding:20px">CONTACTENOS</h1>
-<h4 class="w3-center" style=" font-size:20px ; font-style=tahoma;">Si esta interesado en algún servicio, no dude en llamarnos, con gusto le atenderemos</h4>
+<div class="w3-wide"  id="contact">
+<h1 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important;
+text-align: center; font-style:tahoma; padding:20px">CONTACTENOS</h1>
+<h4 class="w3-center" style=" font-size:20px ; font-style:tahoma;">Si esta interesado en algún servicio, no dude en llamarnos, con gusto le atenderemos</h4>
 
 
 
@@ -513,17 +533,17 @@
 </div>
 <div class="w3-col m6">
 <form action="/action_page.php" target="_blank">
-  <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-    <div class="w3-half">
-      <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre">
-    </div>
-    <div class="w3-half">
-      <input class="w3-input w3-border" type="text" placeholder="Correo" required name="Correo">
-    </div>
-  </div>
-  <input class="w3-input w3-border" type="text" placeholder="Mensage" required name="Mensage">
-  <button class="w3-button w3-#000080 w3-section w3-right" type="submit">
-    <h2  style="color:white; font-size: 25px !important; text-align: center; font-style=tahoma;  background-image: linear-gradient(#000080, rgb(32, 114, 196)); class=button; href=">ENVIAR</h2></button>
+ <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+   <div class="w3-half">
+     <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre">
+   </div>
+   <div class="w3-half">
+     <input class="w3-input w3-border" type="text" placeholder="Correo" required name="Correo">
+   </div>
+ </div>
+ <input class="w3-input w3-border" type="text" placeholder="Mensage" required name="Mensage">
+ <button class="w3-button w3-#000080 w3-section w3-right" type="submit">
+   <h2  style="color:white; font-size: 25px !important; text-align: center; font-style:tahoma;  background-image: linear-gradient(#000080, rgb(32, 114, 196)); class:button href:">ENVIAR</h2></button>
 </form>
 </div>
 </div>
@@ -531,8 +551,6 @@
 </div>
 
 
-</body>
-</html>  
 
 <!-- End Page Content -->
 
@@ -547,7 +565,6 @@
 <i class="fa fa-twitter w3-hover-opacity"></i>
 <i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
-
 <script>
 // Automatic Slideshow - change image every 5 seconds
 var myIndex = 0;
@@ -557,7 +574,7 @@ function carousel() {
 var i;
 var x = document.getElementsByClassName("mySlides");
 for (i = 0; i < x.length; i++) {
-x[i].style.display = "none";  
+ x[i].style.display = "none";  
 }
 myIndex++;
 if (myIndex > x.length) {myIndex = 1}    
@@ -569,9 +586,9 @@ setTimeout(carousel, 4000);
 function myFunction() {
 var x = document.getElementById("navDemo");
 if (x.className.indexOf("w3-show") == -1) {
-x.className += " w3-show";
+ x.className += " w3-show";
 } else { 
-x.className = x.className.replace(" w3-show", "");
+ x.className = x.className.replace(" w3-show", "");
 }
 }
 
@@ -579,7 +596,7 @@ x.className = x.className.replace(" w3-show", "");
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
 if (event.target == modal) {
-modal.style.display = "none";
+ modal.style.display = "none";
 }
 }
 </script>
