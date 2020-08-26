@@ -1,133 +1,129 @@
         
-* {
-  margin:0px;
-  padding:0px;
-  box-sizing: border-box;
-  font-family:tahoma;
-}
-#contenedor {
-  margin:auto;
-  width:1200px;
-  height: 1000px;
-}
-#nav{
-  list-style-type: block;
-} 
-
-header {
-  height: 50px;
-  background:linear-gradient(#000080, rgb(32, 114, 196));
-  color: white;
-}  
-header label {
-font-size: 30px;
-width: 30px;
-height: 30px;
-border-right: 1px solid white;
-cursor: pointer; 
-display: block;
-}    
-header label:hover {
-  cursor: pointer;
-  background:white;
-  height: 30px;
-  cursor: pointer; 
-  display: block;
-  }    
-  
-    @media (max-width: 768px) {
-      header label {
+      * {
+        margin:0px;
+        padding:0px;
+      }
+      #contenedor {
+        margin:auto;
+        width:1200px;
+        height: 1000px;
+      }
+      #nav {
+        list-style-type: none;
+      } 
+     
+      header nav {
+        width:80%;
+        height: 25%;
+        padding:10px;
+				max-width:1200px;
+				margin: auto;
+        background:white;
+        position:relative;
+			}
+      
+      .nav {
+      color:   rgb(32, 114, 196);
+      overflow: hidden;
+      list-style-type: none;
+      background-image:linear-gradient(#000080, rgb(32, 114, 196));
+      }
+      .nav li {
+      position: relative;  
+      float: left;
+      }
+      .nav li a {
+      color: linear-gradient(#000080, rgb(32, 114, 196));
+      display: block;
+      padding: 10px 10px;
+      font-family:tahoma;
+      font-size:25px;
+      text-align: center;
+      text-decoration: none;
+      }
+    .nav li a:hover {
+      background-color:#0000ff;
+      transition: all .3s;
+      visibility: visible;
+    } 
+      @media screen and (max-width: 768px){
+      .nav li {float: block;}
+      
+      }
+      
+      .nav-dropdown { 
+      position: relative;  
+      display: block;
+      padding: 2px 2px;
+      font-family:tahoma;
+      font-size:25px;
+      text-align: center;
+      text-decoration: none;
+      }
+      ul, ol {
+        list-style:block;
+      }
+      .dropdown-item {
+        display:none;
+        position:absolute;
+        min-width:1px;
+      }
+      
+     
+      .navbar-toggler {
+        list-style-type: none;
+      }
+   
+      .dropdown-item {
+        display:none;
+        position:relative;
+        min-width:1px;
+      }
+      .nav li ul {
+        display:none;
+        position:static;
+        min-width:1px;
+        color:rgb(32, 114, 196)
+      }
+      
+      .nav li:hover > ul {
         display:block;
       }
-     
-  .nav-dropdown { 
-    position: absolute;  
-    display: block;
-    padding: 10px 10px;
-    font-family:tahoma;
-    font-size:25px;
-    text-align: center;
-    text-decoration: none;
-    }
-    ul, ol {
-      list-style:none;
-    }
-
-    .navbar-nav.navbar-center {
-    position: absolute;
-    left: 50%;
-    transform: translatex(-50%);
-    }
-
-    .dropdown-item
-    {
-      display:none;
-      position:absolute;
-      min-width:1px;
-    }
-    
-    header nav {
-      width:80%;
-      height: 25%;
-      padding:10px;
-      max-width:1200px;
-      margin: auto;
-      background:white;
-      position:relative;
-    }
-    
-    .nav {
-    color: rgb(32, 114, 196);
-    overflow: hidden;
-    list-style-type: none;
-    background-image:linear-gradient(#000080, rgb(32, 114, 196));
-    }
-    .nav li {
-    position: relative;  
-    float: left;
-    }
-    .nav li a {
-    color: linear-gradient(#000080, rgb(32, 114, 196));
-    display: block;
-    padding: 10px 10px;
-    font-family:tahoma;
-    font-size:25px;
-    text-align: center;
-    text-decoration: none;
-    }
-
-    .nav li a:hover {
-    background-color:rgb(32, 114, 196);
-    transition: all .3s;
-    }
-    
-    .navbar {
-      position: absolute;
-       background: linear-gradient(#000080, rgb(32, 114, 196));
-       width: 70%;
-      margin-left: -70%;
-      }
-      .navbar-nav {
-        position: absolute;
-         background:linear-gradient(#000080, rgb(32, 114, 196))
       
-        }
-     
-    .nav li ul {
-      display:none;
-      position:absolute;
-      min-width:1px;
-    }
+      .nav li ul li {
+        position:relative;
+      }
+      
+      .nav li ul li ul {
+        left:-10px;
+        top:2px;
+      }
+  
     
-    .nav li:hover > ul {
-      display:block;
-    }
+      .contenido {
+      position: auto;
+      }
     
-    .nav li ul li {
-      position:relative;
-    }
+      .topright {
+      position: absolute;
+      top: 140px;
+      right: 10px;
+      font-size: 25px;
+      }
     
-    .nav li ul li ul {
-      left:-10px;
-      top:2px;
-    }
+      img { 
+      width: 100%;
+      height: auto;
+      opacity: 1;
+      }  
+
+      .contenido {
+        position: auto;
+      }
+
+      img { 
+        width: 100%;
+        height: auto;
+        opacity: 1;
+      }
+  
