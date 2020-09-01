@@ -2,126 +2,82 @@
       * {
         margin:0px;
         padding:0px;
+        box-sizing: border-box;
+        font-family: Tahoma;
       }
-      #contenedor {
-        margin:auto;
-        width:1200px;
-        height: 1000px;
+      header {
+        height: 50px;
+        background: linear-gradient(#000080, rgb(32, 114, 196));
+        color: white;
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;    
       }
-      #nav {
-        list-style-type: none;
-      } 
-     
-      header nav {
-        width:80%;
-        height: 25%;
-        padding:10px;
-				max-width:1200px;
-				margin: auto;
-        background:white;
-        position:relative;
-			}
-      
-      .nav {
-      color:   rgb(32, 114, 196);
-      overflow: hidden;
-      list-style-type: none;
-      background-image:linear-gradient(#000080, rgb(32, 114, 196));
+      #btn-menu {
+        display: none;
       }
-      .nav li {
-      position: relative;  
-      float: left;
+      header label {
+        font-size: 30px;
+        cursor: pointer;
+        display: none;
       }
-      .nav li a {
-      color: linear-gradient(#000080, rgb(32, 114, 196));
-      display: block;
-      padding: 10px 10px;
-      font-family:tahoma;
-      font-size:25px;
-      text-align: center;
-      text-decoration: none;
+      .menu ul {
+        background: linear-gradient(#000080, rgb(32, 114, 196));
+        display: flex;
+        list-style: none;
       }
-    .nav li a:hover {
-      background-color:#0000ff;
-      transition: all .3s;
-      visibility: visible;
-    } 
-      @media screen and (max-width: 768px){
-      .nav li {float: block;}
-      
+      .menu ul ul {
+        display: none;
       }
-      
-      .nav-dropdown { 
-      position: relative;  
-      display: block;
-      padding: 2px 2px;
-      font-family:tahoma;
-      font-size:25px;
-      text-align: center;
-      text-decoration: none;
+      .menu a{
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
       }
-      ul, ol {
-        list-style:block;
+      .menu a:hover {
+        background-color:#0000ff;
+        transition: all .3s;
+        visibility: visible;
       }
-      .dropdown-item {
-        display:none;
-        position:absolute;
-        min-width:1px;
+      .menu a span {
+        margin-left: 10px;
       }
-      .navbar-toggler {
-        list-style-type: none;
-      }
-   
-      .dropdown-item {
-        display:none;
-        position:relative;
-        min-width:1px;
-      }
-      .nav li ul {
-        display:none;
-        position:static;
-        min-width:1px;
-        color:rgb(32, 114, 196)
-      }
-      
-      .nav li:hover > ul {
-        display:block;
-      }
-      
-      .nav li ul li {
-        position:relative;
-      }
-      
-      .nav li ul li ul {
-        left:-10px;
-        top:2px;
-      }
-  
-    
-      .contenido {
-      position: auto;
-      }
-    
-      .topright {
-      position: absolute;
-      top: 140px;
-      right: 10px;
-      font-size: 25px;
-      }
-    
-      img { 
-      width: 100%;
-      height: auto;
-      opacity: 1;
-      }  
+      .menu ul li:hover ul {
+        display: block;
+        position: absolute;
 
-      .contenido {
-        position: auto;
       }
-
-      img { 
-        width: 100%;
-        height: auto;
-        opacity: 1;
+      @media (max-width:768 px) {
+        header label {
+          display: block;
+        }
+        .menu {
+          position: absolute;
+                   left: 0;
+          width: 100%;
+          transform: translateX(-100%);
+          transition: all 0.3s;
+        }
+          menu ul {
+          display: block;
+          background:rgb(32, 114, 196);
+        }
+      .menu ul li:hover ul {
+        display: none;
+        position: static;
       }
-  
+      .menu span {
+        position: absolute;
+        right: 5px;
+      }
+      #btn-menu:ckecked ~ .menu {
+        transform: translateX(0%);
+      }
+.menu ul ul {
+  background:rgba(0,0,0,0,.4);
+  }
+ .menu ul ul a{
+   padding: 15 px 40px;
+ } 
+}

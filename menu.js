@@ -1,7 +1,7 @@
 $(".submenu").click(function(){
-   $(this).children("ul").slidetoggle();
-})
+    $(this).children("ul").slidetoggle();
 
+})
 $("ul").click(function(p){
-   p.stopPropagation();
+    p.stopPropagation();
 })
