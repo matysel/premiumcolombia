@@ -40,7 +40,7 @@
       padding: 10px 10px;
       font-family: Tahoma;
       font-size:25px;
-      text-align: center;
+      text-align: right;
       text-decoration: none;
       }
     .nav li a:hover {
@@ -81,8 +81,16 @@
       .navbar-toggler {
         list-style-type: none;
       }
-   
-      .navbar .navbar-toggler .icon-bar{
+      .navbar-toggler-icon {
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        content: "";
+        background: no-repeat center center;
+        background-size: 100% 100%;
+    }   
+      .navbar .navbar-toggler .icon-bar {
         background-color: white !important;
      }
       

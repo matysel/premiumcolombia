@@ -4,15 +4,13 @@
     <title>PREMIUM COLOMBIA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width;  initial-scale=1; minimun-scale=1.0">
-    
-   
+      
     <!-- JS, Popper.js, and jQuery -->
     <link rel="stylesheet"  href="estilos.css"  type="text/css" href="estilos.css" >
     <link rel="icon" href="imagenes/LogoPC.png" type="image/png"/>
     <link rel="icon" href="imagenes/favicon.png" type="image/png"/>
   </head>
   <body>
-
   
   <div class="container-fluid" style="background-color:white;padding: 45px; border: 10px solid white;">
       
@@ -22,10 +20,10 @@
         <main class="container">
         <nav class="navbar nav navbar-expand-md bg-primary style=linear-gradient(#000080, rgb(32, 114, 196));  fixed-top
           padding:15px font-size:25px">
-            <img class="logo" src="imagenes/LogoPC.png" style="width:80px; height: 80px;" class="navbar-brand" style=width:100px;height:90px;></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button"  style = "border: 2px solid #E0E0E0;" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="logo" src="imagenes/LogoPC.png" style="width:80px; height: 80px;" class="navbar-brand" ></a>
+            <button class="navbar-toggler navbar-toggler-center" type="button"  style = "border: 2px solid #E0E0E0;" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon icon-bar" style = "color: white;"></span>
-          </button>
+            </button>
         
 
            
@@ -97,10 +95,7 @@
        </form>
    
     </div>
-  </div>
- 
-    
-    
+  </div>  
 
   <div class="container-fluid"  style="padding: 10px; border: 5px solid white; " >
         <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style: tahoma;padding:20px">
@@ -405,6 +400,60 @@ window.onclick = function(event) {
 if (event.target == modal) {
 modal.style.display = "none";
 }
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+// <script>
+
+
+
+  $('.navbar-collapse ul li a').click(function(){ 
+          $('.navbar-toggle:visible').click();
+  });
+  $(function () { 
+          $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () { 
+                  $('.navbar-toggle:visible').click(); 
+          }); 
+  });
+  $(function () {
+          $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
+                  $('.navbar-toggle:visible').click();
+          });
+  });
+  <li><a href="#Products" data-toggle="collapse" data-target=".navbar-collapse.in">Products</a></li>
+
+$('.collapsable').collapsable('expandAll');
+// Automatic Slideshow - change image every 5 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 </script>
 
