@@ -4,14 +4,13 @@
     <title>PREMIUM COLOMBIA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width;  initial-scale=1; minimun-scale=1.0">
-    
+      
     <!-- JS, Popper.js, and jQuery -->
     <link rel="stylesheet"  href="estilos.css"  type="text/css" href="estilos.css" >
     <link rel="icon" href="imagenes/LogoPC.png" type="image/png"/>
     <link rel="icon" href="imagenes/favicon.png" type="image/png"/>
   </head>
   <body>
-
   
   <div class="container-fluid" style="background-color:white;padding: 45px; border: 10px solid white;">
       
@@ -19,12 +18,12 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet"  href="estilos.css"  type="text/css" href="estilos.css" >
         <main class="container">
-        <nav class="navbar nav navbar-expand-md bg-primary style=linear-gradient(#000080, rgb(32, 114, 196));  fixed-top> 
+        <nav class="navbar nav navbar-expand-md bg-primary style=linear-gradient(#000080, rgb(32, 114, 196));  fixed-top
           padding:15px font-size:25px">
-            <img class="logo" src="imagenes/LogoPC.png" style="width:80px; height: 80px;" class="navbar-brand" style=width:100px;height:90px;></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button"  style = "border: 2px solid #E0E0E0;" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img class="logo" src="imagenes/LogoPC.png" style="width:80px; height: 80px;" class="navbar-brand" ></a>
+            <button class="navbar-toggler navbar-toggler-center" type="button"  style = "border: 2px solid #E0E0E0;" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon icon-bar" style = "color: white;"></span>
-          </button>
+            </button>
         
 
            
@@ -482,7 +481,25 @@
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
+
+
 <script>
+    $('.navbar-collapse ul li a').click(function(){ 
+            $('.navbar-toggle:visible').click();
+    });
+    $(function () { 
+            $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function () { 
+                    $('.navbar-toggle:visible').click(); 
+            }); 
+    });
+    $(function () {
+            $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
+                    $('.navbar-toggle:visible').click();
+            });
+    });
+    <li><a href="#Products" data-toggle="collapse" data-target=".navbar-collapse.in">Products</a></li>
+
+$('.collapsable').collapsable('expandAll');
   // Automatic Slideshow - change image every 5 seconds
   var myIndex = 0;
   carousel();
@@ -498,11 +515,8 @@
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 4000);    
   }
-  $("#navbar li a").click(function(event) {
-       // check if window is small enough so dropdown is created
-       $("#navbar-toggle").is(":visible")
-           $("#nav-collapse").toggle();
-});
+
+
   // Used to toggle the menu on small screens when clicking on the menu button
  
   // When the user clicks anywhere outside of the modal, close it

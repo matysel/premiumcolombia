@@ -73,6 +73,10 @@
       .navbar nav {
        
         text-decoration: none;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3s;
       }
       .navbar-toggler {
         list-style-type: none;

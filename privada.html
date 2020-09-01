@@ -6,27 +6,81 @@
     <meta name="viewport" content="width=device-width;  initial-scale=1; minimun-scale=1.0">
     
     <!-- JS, Popper.js, and jQuery -->
-    <link rel="stylesheet"  href="estilos.css"  type="text/css" href="estilos.css" >
+   
+    <link rel="styleshet"  href="estilos.css"  type="text/css" href="estilos.css" >
     <link rel="icon" href="imagenes/LogoPC.png" type="image/png"/>
     <link rel="icon" href="imagenes/favicon.png" type="image/png"/>
   </head>
   <body>
 
+    <style type="text/css">
+      .nav {
+      color: linear-gradient(#000080, rgb(32, 114, 196));
+      overflow: hidden;
+      background-image:linear-gradient(#000080, rgb(32, 114, 196));
+      }
+      .nav li {
+      position: relative;  
+      float: left;
+      }
+      .nav li a {
+      color: linear-gradient(#000080, rgb(32, 114, 196));
+      display: block;
+      padding: 10px 10px;
+      font-family:tahoma;
+      font-size:25px;
+      text-align: center;
+      text-decoration: none;
+      }
+
+    .nav li a:hover {
+      background-color:#0000ff;
+      transition: all .3s;
+      visibility: visible;
+    } 
+
+    @media screen and (max-width: 768px){
+        .facet_sidebar {
+    display: none;}
+
+    .nav li {
+      float: block;}
+    }
+    .nav li ul {
+        display:none;
+        position:block;
+        min-width:1px;
+        color:rgb(32, 114, 196)
+    }
+      
+    .nav li:hover > ul {
+        display:block;
+        text-decoration: none;
+    }
+      
+    .nav li ul li {
+        position:static;
+    }
+      
+    .nav li ul li ul {
+        left:-10px;
+        top:2px;
+        text-decoration-style: none;
+    }
+   </style>
   
   <div class="container-fluid" style="background-color:white;padding: 45px; border: 10px solid white;">
-      
-      
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet"  href="estilos.css"  type="text/css" href="estilos.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet"  href="estilos.css"  type="text/css" href="estilos.css" >
         <main class="container">
-        <nav class="navbar nav navbar-expand-md bg-primary style=linear-gradient(#000080, rgb(32, 114, 196));  fixed-top> 
+        <nav class="navbar nav navbar-expand-md bg-primary style=linear-gradient(#000080, rgb(32, 114, 196));  fixed-top 
           padding:15px font-size:25px">
-            <img class="logo" src="imagenes/LogoPC.png" style="width:80px; height: 80px;" class="navbar-brand" style=width:100px;height:90px;></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" role="generic" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-           
+             <img class="logo" src="imagenes/LogoPC.png" class="navbar-brand" style=width:80px;height:80px;></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> 
+  
             <div class="navbar navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active"><span class="sr-only">(current)</span>
@@ -40,10 +94,10 @@
                       font-size=35>Contactos</a></li>
                       <li><a class="nav-item"><a href="privada.html"   style=color:white font-style=tahoma 
                       font-size=35>Privada</a></li>
-                <li class="nav-dropdown">
+                 <li class="nav-dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdown"
-                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="combobox"
-                     font-style=tahoma color=white font-size=35>
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+                     font-style=tahoma font-size=35>
                      Servicios </a> 
                    <ul>                    
                       <a class="dropdown-item" href="fianzas.html"  style=color:white font-style=tahoma font-size=35>Fianzas</a>
@@ -56,6 +110,8 @@
           </div>
      </nav>
   </main>  
+        
+        
         <h2><br><br><br><br> </h2>   
         <div class ="header">
           <div class="col-md-3 ">
@@ -69,6 +125,7 @@
              <figure class="figure">
               <img class="logo figure-img img-fluid text=center  d-block" src="imagenes/LogoPC.png" style="width:120px; height: 120px;" target="blank" alt="Premium Colombia" class="center"><br><br> </a>
                <meta name="viewport" alt="Premium Colombia">
+         
             </figure>
           </div>
           <div class="col-md-4" >
@@ -89,17 +146,17 @@
                     <a href="https://www.twitter.com/premium_colombia">
                       <img class="logo" src="logos/logo twitter.png"; style="width:35px; height: 35px;" alt=" Instagram" class="mx-auto d-block" class="">
                     </a>
+                  
                   </style>
                 </div>
         </div>
        </form>
-   
     </div>
   </div>
 <!-- Automatic Slideshow Images -->
 <div class="container-fluid" style="background-color:white;padding: 10px; border: 10px solid white;">
      <div id="demo" class="carousel slide" data-ride="carousel">
- <!-- Automatic Slideshow Images -->   
+<!-- Automatic Slideshow Images -->   
   <div class="mySlides w3-display-container w3-center" style="display: block;">
      <!-- Indicators -->
       <div class="carousel-inner">
@@ -111,10 +168,14 @@
             <span class="carousel-control-next-icon"></span>
             </a>
             <img src="imagenes/architecture0.png" width="1200" height="400" style="height: 70vh"/>
+           
          </div>
       </div>
    </div>
+  
    <div class="mySlides w3-display-container w3-center" style="display: block;">
+      
+    
       <div class="carousel-inner">
         <div class="carousel-item> style=margin-top: 1px; margin-bottom: 1px ; border-top: 1px   solid;border-bottom: 1px  solid;">
           <a class="carousel-control-prev figure-img img-fluid" href="#demo" data-slide="imagenes/architecture0.png">
@@ -128,7 +189,9 @@
         </div>
       </div>  
   </div>
+    
   <div class="mySlides w3-display-container w3-center" style="display: block;">
+    
         <div class="carousel-inner">
           <div class="carousel-item> style=margin-top: 1px; margin-bottom: 1px ; border-top: 1px   solid;border-bottom: 1px  solid;">
             <a class="carousel-control-prev figure-img img-fluid" href="#demo" data-slide="imagenes/contratos.png">
@@ -142,13 +205,19 @@
           </div>
         </div>
   </div>
+
+
 <!-- Nosotros Section -->
-   
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  
+
   <div class="w3-wide"  style="background-color:white;padding: 10px; border: 5px solid white;" >
+ 
     <div class="w3-wide" style="padding: 10px; border: 5px solid white; " >
           <div class="w3-wide">
-           <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white;  font-size: 25px !important; text-align: center; font-style: tahoma;padding: 20px">
-            ¿QUIENES SOMOS?</h2>
+            <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white;  font-size: 25px !important; text-align: center; font-style: tahoma;padding: 20px">
+              ¿QUIENES SOMOS?</h2>
             <h3 style=" font-size: 20px ; text-align: justify   font-style tahoma "> 
               <br><br></h3>
            <div class="container-fluid">
@@ -169,6 +238,7 @@
                 &nbsp;&nbsp;&nbsp;¡Estamos a su servicio!<br><br><br><br><br><br><br></h3>
             </div>
         </div>          
+
             <h3 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important; text-align: center; font-style:tahoma; padding:20px;">
            NUESTROS SERVICIOS</h3>
            <div class="w3-wide">
@@ -178,6 +248,7 @@
              <br>Las pólizas de seguro son el mecanismo idóneo para garantizar y proteger el patrimonio de empresas y personas naturales,
              nosotros brindamos un amplio portafolio que le permitirá reducir riesgos e incertidumbre.<br><br><br></h3>
           </div>
+
        <div class="col-sm-3"  style="background-color:white;" >
           <h3 class="container-fluid">
 
@@ -187,15 +258,14 @@
           <b><br>FIANZAS &<br> CUMPLIMIENTO<br></b></h2>
         
           <h6 style=" font-size: 14px !important; text-align: left;  font-style:tahoma;"> 
-           
-        . Seriedad de Oferta<br>
+          <br>. Seriedad de Oferta<br>
         . Cumplimento<br>
         . Anticipo<br>
         . Salarios<br>
         . Estabilidad<br>
         . Responsabilidad Civil Extracontractual<br>
         . Responsabilidad Civil Profesional<br>
-        . Vida grupo y demás exigidas<br><br><br><br><br><br<br><br><br></h6>
+        . Vida grupo y demás exigidas<br><br><br><br><br><br></h6>
         
           <a style="background-color: #000080" class="read-more" style="width:100%" href="" >
           <a href="fianzas.html">
@@ -253,7 +323,7 @@
     
        <div class="col-sm-3" style="background-color:white;padding: 10px; border: 5px solid white;">   
             <h3 class="container-fluid"> 
-            <img src="imagenes/generalesi.png" width="160" height="118" alt="Tamaño original" class="mx-auto d-block" style="width:82% ">
+            <img src="imagenes/generalesi.png" width="160" height="160" alt="Tamaño original" class="mx-auto d-block" style="width:82% ">
             <h6 style=" font-size: 14px !important; text-align: left;  font-style:tahoma;"> <br></h6>
            <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color: white !important; font-size: 14px !important; text-align: center; font-style:tahoma;">
            <b><br>PRODUCTOS GENERALES PERSONALES Y EMPRESARIALES:<br></b> </h2>
@@ -278,7 +348,7 @@
        
         <h2 style=" font-size: 14px !important; text-align: center; font-style:tahoma;"></h2>
           <!-- Page Section -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
+        
             <!-- Container Start here -->
                       <!-- Row Start -->
                       <div class="row">
@@ -434,7 +504,6 @@
 
 
 <!-- The Contact Section -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <div class="w3-wide"  id="contact">
   <h1 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white; font-size: 25px !important;
    text-align: center; font-style:tahoma; padding:20px">CONTACTENOS</h1>
@@ -461,9 +530,11 @@
       </div>
       <input class="w3-input w3-border" type="text" placeholder="Mensage" required name="Mensage">
       <button class="w3-button w3-#000080 w3-section w3-right" type="submit">
-        <h2  style="color:white; font-size: 25px !important; text-align: center; font-style:tahoma;  background-image: linear-gradient(#000080, rgb(32, 114, 196)); ">ENVIAR</h2></button>
+        <h2  style="color:white; font-size: 25px !important; text-align: center; font-style:tahoma;  background-image: linear-gradient(#000080, rgb(32, 114, 196));">ENVIAR</h2></button>
     </form>
   </div>
+</div>
+</div>
 </div>
 
 
@@ -516,7 +587,7 @@
     }
   }
   </script>
-
+  </div>
 
 </body>
 </html>
