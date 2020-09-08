@@ -62,6 +62,10 @@
     .nav li {
         float: block;
     }
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
 }
 
 .nav-dropdown {
