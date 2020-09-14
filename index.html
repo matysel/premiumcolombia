@@ -51,22 +51,21 @@
             background-image: linear-gradient(#000080, rgb(32, 114, 196));
             display: flex;
             justify-content: flex-start;
-            align-items: center;
+            align-items: left;
         }
         
         .nav li {
             position: relative;
-            padding: 20px;
             float: left;
         }
         
         .nav li a {
             color: linear-gradient(#000080, rgb(32, 114, 196));
             display: block;
-            padding: 10px 10px;
+            padding: 40px 10px;
             font-family: Tahoma;
             font-size: 25px;
-            text-align: center;
+            text-align: left;
             text-decoration: none;
         }
         
@@ -89,7 +88,7 @@
         .nav-dropdown {
             position: relative;
             display: block;
-            padding: 0px 40px;
+            padding: 40px 10px;
             font-family: Tahoma;
             font-size: 25px;
             text-align: left;
@@ -99,13 +98,13 @@
         .dropdown-item {
             display: none;
             position: absolute;
-            min-width: 1px;
+            min-width: 10px;
         }
         
         .navbar nav {
             text-decoration: none;
             padding: 60px;
-            left: 0;
+            left: 10px;
             width: 100%;
             transform: translateX(-100%);
             transition: all 0.3s;
@@ -113,47 +112,51 @@
         
         .navbar-toggler {
             list-style-type: none;
-            background-color: #0000ff;
-            width: 50px;
-            height: 50px;
-        }
-        
-        .navbar-toggler-icon {
-            display: block;
-            background-color: #0000ff;
-            width: 50px;
-            height: 50px;
-        }
-        
-        .navbar-toggler .icon-bar {
-            margin: 100px;
-            display: block;
-            background-color: #0000ff;
-            width: 50px;
-            height: 50px;
-            border-radius: 1px;
         }
         
         .navbar-toggler-icon {
             display: inline-block;
-            background-color: #0000ff;
-            width: 50px;
-            height: 50px;
+            background-color: #cccccc;
+            width: 30px;
+            height: 30px;
         }
         
         .navbar-toggler .icon-bar {
             margin: 100px;
             display: block;
-            width: 50px;
-            height: 50px;
-            background-color: #0000ff;
+            width: 30px;
+            height: 30px;
             border-radius: 1px;
+        }
+        
+        .menu-icon {
+            background-color: white !important;
+        }
+        
+        .navbar-toggler-icon {
+            display: inline-block;
+            background-color: #cccccc;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .navbar-toggler .icon-bar {
+            margin: 100px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: #cccccc;
+            border-radius: 2px;
+        }
+        
+        .navbar .navbar-toggler .icon-bar {
+            background-color: white !important;
         }
         
         .dropdown-item {
             display: none;
             position: relative;
-            min-width: 1px;
+            min-width: 10px;
         }
         
         ul {
@@ -163,7 +166,7 @@
         .nav li ul {
             display: none;
             position: static;
-            min-width: 1px;
+            min-width: 10px;
             color: white;
             list-style: none;
         }
@@ -179,10 +182,6 @@
         }
         
         .nav li ul li {
-            position: relative;
-        }
-        
-        .li ul li {
             position: relative;
         }
         
@@ -205,30 +204,33 @@
     padding:100px font-size:25px">
             <link rel="stylesheet" href="estilos.css" type="text/css" href="estilos.css">
             <img class="logo" src="imagenes/LogoPC.png" class="navbar-brand" style="width:80px; height: 80px;">
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
   <span class="navbar-toggler-icon"  style=color:#0000ff font-style=tahoma font-size=28;>---<br>---<br></span>
 </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
+                    <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html" style=color:white font-style=tahoma font-size=35>&nbsp;&nbsp;&nbsp;&nbsp;Inicio</a>
+
+                        <a class="nav-link" href="index.html" style=color:white font-style=tahoma font-size=35>Inicio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html" style=color:white font-style=tahoma font-size=35>&nbsp;&nbsp;&nbsp;Nosotros</a>
+                        <a class="nav-link" href="nosotros.html" style=color:white font-style=tahoma font-size=35>Nosotros&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="companias.html" style=color:white font-style=tahoma font-size=35>&nbsp;&nbsp;&nbsp;Compañias</a>
+                        <a class="nav-link" href="companias.html" style=color:white font-style=tahoma font-size=35>Compañias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                     </li>
                     <!-- cambio no se ejecutan estas dos opciones del menu   contactos y privada
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactos.html" style=color:white font-style=tahoma font-size=35>&nbsp;&nbsp;&nbsp;Contactos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="privada.html" style=color:white font-style=tahoma font-size=35>&nbsp;&nbsp;&nbsp;Privada</a>
-                    </li>
-                    Images -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contactos.html" style=color:white font-style=tahoma font-size=35>&nbsp;&nbsp;&nbsp;Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="privada.html" style=color:white font-style=tahoma font-size=35>&nbsp;&nbsp;&nbsp;Privada</a>
+                </li>
+                Images -->
                     <li class="nav-dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=color:white font-style=tahoma font-size=35>&nbsp;&nbsp;&nbsp;Servicios </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=color:white font-style=tahoma font-size=35>Servicios </a>
                         <ul>
                             <a class="dropdown-item" href="fianzas.html" style=color:white font-style=tahoma font-size=35>Fianzas</a>
                             <a class="dropdown-item" href="empresas.html" style=color:white font-style=tahoma font-size=35>Empresas</a>
@@ -292,6 +294,7 @@
             </div>
         </div>
 
+
         <div class="container">
 
             <div class="container-fluid" style="background-color:white;padding: 10px; border: 10px solid white;">
@@ -300,7 +303,7 @@
                     <div class="mySlides w3-display-container w3-center" style="display: block;">
                         <!-- Indicators -->
                         <div class="carousel-inner">
-                            <div class="carousel-item> style=margin-top: 1px; margin-bottom: 1px ; border-top: 1px   solid; border-bottom: 1px  solid;">
+                            <div class="carousel-item> style=margin-top: 1px; margin-bottom: 1px ; border-top: 1px   solid;border-bottom: 1px  solid;">
                                 <a class="carousel-control-prev figure-img img-fluid" href="#demo" data-slide="imagenes/familia.png">
                                     <span class="carousel-control-prev-icon figure-img img-fluid"></span>
                                 </a>
@@ -345,27 +348,26 @@
 
             <div class="container" style="background-color:white;padding: 10px; border: 5px solid white;">
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-                <link rel="styleshet" href="estilos.css" type="text/css" href="estilos.css">
                 <div class="w3-wide" style="padding: 10px; border: 5px solid white; ">
-                    <h2><br><br> </h2>
+
                     <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white;  font-size: 25px !important; text-align: center; font-style: tahoma;padding: 20px">
                         ¿QUIENES SOMOS?</h2>
-                    <h3 style=" font-size: 20x ; text-align: justify;  font-style: tahoma;">
-                        <br></h3>
+                    <h3 style=" font-size: 20px ; text-align: justify   font-style tahoma ">
+                        <br><br></h3>
                     <div class="container-fluid">
-                        <div class="w3-wide">
-                            <div class="col-md-4" style="background-color:white;">
-                                <img src="imagenes/quienes.jpg" width="140" height="180" alt="Tamaño original" class="figure-img img-fluid text center mx-auto d-block" style="width:65%">
-                            </div>
-
+                        <div class="col-md-4" style="background-color:white;">
+                            <figure class="figure">
+                                <img src="imagenes/quienes.jpg" width="240" height="240" alt="Tamaño original" class="figure-img img-fluid text center mx-auto d-block" style="width:80%">
+                                <h3 style=" font-size: 20px ; text-align: left;  font-style: tahoma ; padding: 10px; border: 5px solid white;">
+                                    <b></b></h3>
+                            </figure>
                         </div>
                         <div class="col-md-8" style="background-color:white;">
-                            <h3 style=" font-size: 23px ; text-align: left;  font-style: tahoma; border: 5px solid white;">
-                                Somos una compañía especializada en asesoría de seguros, con más de 10 años de experiencia en el mercado. Contamos con un personal idóneo que otorga a cada cliente soluciones competitivas, diferenciadoras y profesionales mediante una asesoría integral.
-                                ¡Estamos a su servicio!<br><br><br><br></h3>
+                            <h3 style="font-size: 20x ; text-align: left;  font-style: tahoma; padding: 5px; border: 5px solid white;">
+                                <br>Somos una compañía especializada en asesoría de seguros, con más de 10 años de experiencia en el mercado. Contamos con un personal idóneo que otorga a cada cliente soluciones competitivas, diferenciadoras y profesionales
+                                mediante una asesoría integral. &nbsp;&nbsp;&nbsp;¡Estamos a su servicio!<br><br><br><br></h3>
                         </div>
                     </div>
-
                     <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color:white;  font-size: 25px !important; text-align: center; font-style: tahoma;padding: 20px">
                         NUESTROS SERVICIOS</h3>
                         <div class="w3-wide">
@@ -379,12 +381,12 @@
                                         <img src="imagenes/fianzasi.png" width="100" height="100" alt="Tamaño original" class="mx-auto d-block" style="width:88% ">
                                         <h6 style="font-size: 14px !important; text-align: left;  font-style:tahoma;"> <br></h6>
                                         <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color: white !important; font-size: 14px !important; text-align: center; font-style:tahoma;">
-                                            <b><br>FIANZAS &<br> CUMPLIMIENTO:<br></b></h2>
+                                            <b><br>FIANZAS &<br> CUMPLIMIENTO<br></b></h2>
 
                                         <h6 style=" font-size: 14px !important; text-align: left;  font-style:tahoma;">
 
                                             . Seriedad de Oferta<br> . Cumplimento<br> . Anticipo<br> . Salarios<br> . Estabilidad<br> . Responsabilidad Civil Extracontractual<br> . Responsabilidad Civil Profesional<br> . Vida grupo y demás exigidas<br><br><br><br><br>
-                                            <br<br><br><br></h6>
+                                            <br<br><br><br><br></h6>
 
                                         <a style="background-color: #000080" class="read-more" style="width:100%" href="">
                                             <a href="fianzas.html">
@@ -399,10 +401,8 @@
                                         <img src="imagenes/empresasi.png" width="100" height="100" alt="Tamaño original" class="mx-auto d-block" style="width:98% ">
                                         <h6 style=" font-size: 14px !important; text-align: left;  font-style:tahoma;"> <br><br></h6>
                                         <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color: white !important; font-size: 14px !important; text-align: center; font-style:tahoma;">
-                                            <b><br>SEGUROS  <br>EMPRESARIALES:<br></b></h2>
-                                        <h6 style=" font-size: 14px !important; text-align: left; font-style:tahoma;"><br> ARL<br> Incendio<br>Multirriesgo Copropiedades<br> Multirriesgo PYME<br>Transporte de mercancias y valores<br> Infidelidad y Riesgo Financiero (IRF)<br> Directores y Administradores<br>Seguro contra riesgos
-                                            ciberneticos
-                                            <br><br><br></h6>
+                                            <b><br>SEGUROS PARA <br>EMPRESAS<br></b></h2>
+                                        <h6 style=" font-size: 14px !important; text-align: left; font-style:tahoma;"><br> SECTOR CONSTRUCCIÓN SEGUROS SECTOR CONSTRUCCIÓN<br> Todo Riesgo Construcción y Montaje – Maquinaria y Equipo<br> Póliza Decenal<br> Errores y Omisiones - Arquitectos e Ingenieros<br> Responsabilidad civil profesional<br>                                            <br> ADMINISTRADORA DE RIESGOS LABORALES - ARL<br></h6>
                                         <h2 style=" font-size: 12px !important; text-align: center; font-style:tahoma;"><br><br><br></h2>
                                         <a style="background-color: #000080" class="read-more" style="width:100%" href="">
                                             <a href="empresas.html">
@@ -417,11 +417,11 @@
                                         <img src="imagenes/disposicionesi.png" width="80" height="100" alt="Tamaño original" class="mx-auto d-block" style="width:93% ">
                                         <h6 style=" font-size: 14px !important; text-align: left;  font-style:tahoma;"> <br><br></h6>
                                         <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color: white !important; font-size: 14px !important; text-align: center; font-style:tahoma;">
-                                            <b><br>SEGUROS PARA<br> INGENIERIA:<br></b></h2>
+                                            <b><br>DISPOSICIONES<br> LEGALES:<br></b></h2>
                                         <h6 style=" font-size: 14px !important; text-align: left; font-style:tahoma;"><br> Son garantías que tienen por objeto cumplir el pago de obligaciones dinerarias o garantizar una disposición legal.
-                                            <br>Todo Riesgo Construcción y Montaje – Maquinaria y Equipo<br> Póliza Decenal<br> Errores y Omisiones - Arquitectos e Ingenieros <br> Responsabilidad civil profesional<br>Seguros de eficiencia energética y
-                                            generación de energía
-                                            <br><br><br></h6>
+                                            <br>Devolución de IVA<br> Devolución de renta<br> Importaciones temporales a corto y largo plazo <br> Usuario aduanero permanente<br> Leasing
+                                            <br> Reembarque
+                                            <br> Y demas emanadas en la ley tributaria o ley aduanera vigente.<br><br><br></h6>
 
                                         <a href="ingenieria.html">
                                             <h4 style="color:white; font-size: 15px !important; padding:10px; text-align: center; font-style:tahoma;  background-image: linear-gradient(#000080, rgb(32, 114, 196))" class="read-more" style="width:100%" href="">
@@ -437,7 +437,7 @@
                                         <h2 style="background-image: linear-gradient(#000080, rgb(32, 114, 196)); color: white !important; font-size: 14px !important; text-align: center; font-style:tahoma;">
                                             <b><br>PRODUCTOS GENERALES PERSONALES Y EMPRESARIALES:<br></b> </h2>
                                         <h6 style="font-size: 14px !important; text-align: left; font-style:tahoma;">
-                                            <br>Seguros de vida<br>Seguros de accidentes personales<br> Seguros educativos.<br><b>SEGUROS PARA AUTOMOVILES</b><br> I. Seguro Obligatorio- SOAT<br>II. TODO RIESGO<br>SEGURO ARRIENDO<br>SEGURO DE CREDITO</h6>
+                                            <br>Todo riesgo perdidas o daños.<br> Seguros educativos<br> Seguros de vida<br> Accidentes personales, colectivos, vida laboral<br> Seguros de arrendamiento.<br><br><br><br></h6>
                                         <h2 style=" font-size: 20px !important; text-align: center; font-style:tahoma;"><br><br>
                                             <br></h2>
                                         <a href="generales.html">
